@@ -74,3 +74,38 @@ p {
     width: 1016px;
   }
 }
+.home__container { 
+  height: calc(100vh - 59px);
+}
+
+.user-input { 
+  border: 1px solid white;
+}
+
+.user-input-button, .user-input { 
+  border-radius: 0px;
+}
+
+.user-input-button { 
+   display: inline-block;
+   position: relative;
+   border: 1px solid white;
+   color: white;
+}
+
+.user-input-button::after { 
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #c91d1d;
+  transform-origin:left;
+  transition:width 0.25s ease;
+  z-index:-1;
+}
+
+.user-input-button:hover::after { 
+  width: 100%;
+}

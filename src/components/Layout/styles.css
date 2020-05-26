@@ -1,0 +1,25 @@
+.layout-container {
+  min-height: calc(100vh - 60px);
+}
+
+.bg-image-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.bg-image {
+  position: absolute;
+  top: 0px;
+  pointer-events: none;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+.bg-image-img {
+  transition-property: opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(rgba(255, 255, 255, 0.2), transparent 70%);
+  opacity: 1;
+}

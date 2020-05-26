@@ -1,0 +1,68 @@
+.match-table tr {
+  clip-path: polygon(0 0,calc(100% - 1rem) 0,100% 1rem,100% 100%,1rem 100%,0 calc(100% - 1rem));
+  background: #20132a;
+}
+.match-details {
+  @apply py-0 px-8 rounded-4 mb-4 bg-transparent;
+}
+.match-table {
+  @apply m-0 border-separate;
+  border-spacing: 0 1rem;
+}
+.match-table, .table {
+  @apply w-full mb-4 text-white;
+}
+.match-table thead th, .table thead th {
+  @apply align-bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.match-table tbody td, .match-table thead th {
+  @apply align-middle;
+  border-top: none;
+  border-bottom: none;
+}
+.match-table td, .match-table th, .table td, .table th {
+  @apply align-top p-3;
+  border-top: 1px solid #dee2e6;
+}
+.match-table__groups th {
+  @apply p-1 text-xs text-center uppercase font-medium text-white;
+  background: #150f1a;
+}
+.match-table__stats {
+  @apply border-0 relative whitespace-no-wrap;
+}
+.match-table__stats th {
+  @apply w-12 p-2 text-center;
+  background: #150f1a;
+  border-bottom: 2px solid #20132a;
+}
+.match-table__first {
+  border-left: 1px solid #150f1a;
+}
+.match-table__stat-name {
+  @apply text-white font-bold;
+  font-family: Rajdhani,sans-serif;
+  border-bottom: 1px dotted #6b54b6;
+}
+.match-table__even td {
+  background: #150f1a;
+}
+.match-table td {
+  color: #bfbfbf;
+}
+.match-table__agent-cell {
+  @apply w-12 p-0 !important;
+}
+.match-table__agent {
+  @apply w-12 h-12;
+}
+.match-table__nickname {
+  @apply text-white font-bold;
+  transition: color .5s ease;
+  font-family: Rajdhani,sans-serif;
+}
+.match-table__stat-value {
+  @apply font-bold text-center;
+  font-family: Rajdhani,sans-serif;
+}

@@ -1,0 +1,114 @@
+.Button-module.Button-module--reversed {
+  @apply text-ice-white;
+}
+.Button-module--button:focus {
+  @apply outline-none;
+}
+@media (min-width: 1024px) {
+  .Button-module {
+    font-size: 1.4rem;
+  }
+}
+.Button-module {
+  @apply text-cyan-blue relative block text-xs uppercase text-center border-0 w-full p-03;
+  font-family: 'Heebo-Bold', Arial, sans-serif;
+}
+
+.Button-module:after, 
+.Button-module:before {
+  @apply block absolute w-full left-0 border border-solid border-cyan-blue;
+  content: "";
+  height: calc(50% - .2rem);
+}
+.Button-module:before {
+  @apply top-0 border-b-0 rounded-tl-md;
+}
+.Button-module:after {
+  @apply bottom-0 border-t-0 rounded-br-md;
+}
+@media (min-width: 1024px) {
+  .Button-module--label:before {
+    height: calc(100% - .2rem);
+  }
+}
+.Button-module--label:before {
+  @apply w-full left-0 bottom-0;
+  height: calc(100% - .15rem);
+}
+@media (min-width: 1024px) {
+  .Button-module--label:after {
+    @apply h-02;
+    width: calc(100% - .2rem);
+    left: .2rem;
+  }
+}
+.Button-module--label:after {
+  @apply top-0 h-03;
+  width: calc(100% - .15rem);
+  left: .15rem;
+}
+.Button-module--label:after, 
+.Button-module--label:before {
+  @apply block absolute bg-ice-white;
+  content: "";
+}
+.Button-module.Button-module--reversed .Button-module--label:after {
+  @apply border-solid border border-l-0 border-b-0;
+}
+.Button-module.Button-module--reversed .Button-module--label:after, 
+.Button-module.Button-module--reversed .Button-module--label:before {
+  @apply bg-cyan-blue;
+}
+
+.Button-module--label {
+  @apply relative overflow-hidden;
+}
+
+.Button-module.Button-module--reversed .Button-module--label:before {
+  @apply border-solid border border-t-0;
+}
+
+.Button-module--hover-mask.Button-module--red {
+  @apply bg-overlay-red;
+}
+.Button-module--hover-mask {
+  @apply block absolute h-full top-0 z-1;
+  content: "";
+  width: 120%;
+  left: -5%;
+  -webkit-transform: translateX(-100%) skew(-10deg);
+  transform: translateX(-100%) skew(-10deg);
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+}
+.Button-module:hover .Button-module--hover-mask {
+  -webkit-transform: translateX(0) skew(-10deg);
+  transform: translateX(0) skew(-10deg);
+}
+.Button-module--label-text {
+  @apply relative block bg-transparent py-3 px-10 z-1;
+  transition: color ease-in-out .1s;
+  font-family: 'Heebo-Bold', Arial, sans-serif;
+}
+@media (min-width: 1024px) {
+  .Button-module--label-text:after {
+    @apply h-04 w-04;
+  }
+}
+.Button-module--label-text:after {
+  @apply bg-gray-300 block absolute right-0 bottom-0 w-0175 h-02;
+  content: "";
+  -webkit-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in;
+}
+.Button-module:hover:not(.Button-module--red) .Button-module--label-text:after {
+  @apply bg-ice-white;
+}
+.Button-module--hover-mask.Button-module--default {
+  @apply bg-cyan-blue;
+}
+.Button-module:hover .Button-module--label-text {
+  @apply text-ice-white;
+}

@@ -1,0 +1,35 @@
+.profile-section-wrapper {
+  @apply relative pt-16 mt-16;
+}
+
+.profile-user-wrapper {
+  @apply w-full flex items-center px-4 text-center flex-wrap justify-center;
+}
+.profile-user-username {
+  @apply flex-1 text-4xl leading-normal text-white;
+}
+.profile-user-discriminator {
+  @apply text-base;
+}
+
+.profile-user-image-wrapper {
+  @apply w-full flex justify-center;
+}
+.profile-user-image {
+  @apply shadow-xl rounded-full h-auto align-middle border-none -mt-16 min-w-10 max-w-10 p-2 bg-navbar;
+}
+.match-history {
+  @apply -mt-12;
+}
+.match-wrapper {
+  @apply cursor-pointer;
+}
+
+@screen lg {
+  .profile-user-wrapper {
+    @apply w-10/12 order-2 text-left;
+  }
+  .profile-user-image-wrapper {
+    @apply w-2/12 order-1;
+  }
+}

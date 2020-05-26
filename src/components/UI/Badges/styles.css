@@ -1,0 +1,18 @@
+.badge {
+  @apply tracking-wider text-white px-2 text-xs rounded leading-loose mr-2 font-semibold select-none pointer-events-none;
+}
+.badge-admin {
+  @apply bg-badge-admin;
+}
+
+.badge-mod {
+  @apply bg-badge-mod;
+}
+
+.badge-support {
+  @apply bg-badge-support;
+}
+
+.badge-user {
+  @apply bg-badge-user;
+}

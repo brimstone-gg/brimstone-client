@@ -1,0 +1,33 @@
+.match {
+  @apply relative flex px-8 items-center bg-white shadow-lg h-24 rounded-4 border-l-8 text-gray-900 mb-2;
+}
+.match__agent {
+  @apply w-24 h-24 mr-4 bg-cover bg-bottom;
+}
+.match__stat {
+  @apply flex flex-col justify-center items-center px-4;
+}
+.match__stat-value {
+  @apply font-extrabold text-xl text-left;
+}
+.match__stat-label {
+  @apply text-sm text-gray-600;
+}
+.match__meta {
+  @apply flex flex-col justify-between px-4;
+}
+.match__meta-item {
+  @apply flex text-sm font-extrabold uppercase;
+}
+.match__meta-item > svg {
+  @apply inline-flex w-4 mr-04;
+}
+.match__result {
+  @apply flex flex-col justify-center items-center px-4;
+}
+.match__result-label {
+  @apply text-sm uppercase;
+}
+.match__result-score {
+  @apply text-3xl font-extrabold;
+}

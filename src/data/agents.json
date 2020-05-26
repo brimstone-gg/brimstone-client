@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "agent_name": "Breach",
+      "agent_image": "/images/agents/profile/breach.png",
+      "page": "/agents/breach"
+    },
+    {
+      "agent_name": "Brimstone",
+      "agent_image": "/images/agents/profile/brimstone.png",
+      "page": "/agents/brimstone"
+    },
+    {
+      "agent_name": "Cypher",
+      "agent_image": "/images/agents/profile/cypher.png",
+      "page": "/agents/cypher"
+    },
+    {
+      "agent_name": "Jett",
+      "agent_image": "/images/agents/profile/jett.png",
+      "page": "/agents/jett"
+    },
+    {
+      "agent_name": "Omen",
+      "agent_image": "/images/agents/profile/omen.png",
+      "page": "/agents/omen"
+    },
+    {
+      "agent_name": "Phoenix",
+      "agent_image": "/images/agents/profile/phoenix.png",
+      "page": "/agents/phoenix"
+    },
+    {
+      "agent_name": "Raze",
+      "agent_image": "/images/agents/profile/raze.png",
+      "page": "/agents/raze"
+    },
+    {
+      "agent_name": "Sage",
+      "agent_image": "/images/agents/profile/sage.png",
+      "page": "/agents/sage"
+    },
+    {
+      "agent_name": "Sova",
+      "agent_image": "/images/agents/profile/sova.png",
+      "page": "/agents/sova"
+    },
+    {
+      "agent_name": "Viper",
+      "agent_image": "/images/agents/profile/viper.png",
+      "page": "/agents/viper"
+    }
+  ]
+}

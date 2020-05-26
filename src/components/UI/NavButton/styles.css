@@ -1,0 +1,115 @@
+.NavButton-module.NavButton-module--reversed {
+  @apply text-ice-white;
+}
+.NavButton-module--button:focus {
+  @apply outline-none;
+}
+@media (min-width: 1024px) {
+  .NavButton-module {
+    font-size: 1.4rem;
+  }
+}
+.NavButton-module {
+  @apply text-cyan-blue relative block text-xs uppercase text-center border-0 p-03;
+  font-family: 'Heebo-Bold', Arial, sans-serif;
+}
+
+.NavButton-module:after, 
+.NavButton-module:before {
+  @apply block absolute w-full left-0;
+  content: "";
+  height: calc(50% - .2rem);
+  border: 1px solid rgba(236,232,225,.5);
+}
+.NavButton-module:before {
+  @apply top-0 border-b-0 rounded-tl-md;
+}
+.NavButton-module:after {
+  @apply bottom-0 border-t-0 rounded-br-md;
+}
+@media (min-width: 1024px) {
+  .NavButton-module--label:before {
+    height: calc(100% - .2rem);
+  }
+}
+.NavButton-module--label:before {
+  @apply w-full left-0 bottom-0;
+  height: calc(100% - .15rem);
+}
+@media (min-width: 1024px) {
+  .NavButton-module--label:after {
+    @apply h-02;
+    width: calc(100% - .2rem);
+    left: .2rem;
+  }
+}
+.NavButton-module--label:after {
+  @apply top-0 h-03;
+  width: calc(100% - .15rem);
+  left: .15rem;
+}
+.NavButton-module--label:after, 
+.NavButton-module--label:before {
+  @apply block absolute bg-ice-white;
+  content: "";
+}
+.NavButton-module.NavButton-module--reversed .NavButton-module--label:after {
+  @apply border-solid border border-l-0 border-b-0;
+}
+.NavButton-module.NavButton-module--reversed .NavButton-module--label:after, 
+.NavButton-module.NavButton-module--reversed .NavButton-module--label:before {
+  @apply bg-cyan-blue;
+}
+
+.NavButton-module--label {
+  @apply relative overflow-hidden;
+}
+
+.NavButton-module.NavButton-module--reversed .NavButton-module--label:before {
+  @apply border-solid border border-t-0;
+}
+
+.NavButton-module--hover-mask.NavButton-module--red {
+  @apply bg-overlay-red;
+}
+.NavButton-module--hover-mask {
+  @apply block absolute h-full top-0 z-1;
+  content: "";
+  width: 120%;
+  left: -5%;
+  -webkit-transform: translateX(-100%) skew(-10deg);
+  transform: translateX(-100%) skew(-10deg);
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+}
+.NavButton-module:hover .NavButton-module--hover-mask {
+  -webkit-transform: translateX(0) skew(-10deg);
+  transform: translateX(0) skew(-10deg);
+}
+.NavButton-module--label-text {
+  @apply relative block bg-transparent py-2 px-10 z-1;
+  transition: color ease-in-out .1s;
+  font-family: 'Heebo-Bold', Arial, sans-serif;
+}
+@media (min-width: 1024px) {
+  .NavButton-module--label-text:after {
+    @apply h-04 w-04;
+  }
+}
+.NavButton-module--label-text:after {
+  @apply bg-cyan-blue block absolute right-0 bottom-0 w-0175 h-02;
+  content: "";
+  -webkit-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in;
+}
+.NavButton-module:hover:not(.NavButton-module--red) .NavButton-module--label-text:after {
+  @apply bg-ice-white;
+}
+.NavButton-module--hover-mask.NavButton-module--default {
+  @apply bg-cyan-blue;
+}
+.NavButton-module:hover .NavButton-module--label-text {
+  @apply text-ice-white;
+}

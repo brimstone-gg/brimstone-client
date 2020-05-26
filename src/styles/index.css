@@ -1,0 +1,76 @@
+/* purgecss start ignore */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+/* purgecss end ignore */
+@import "tailwindcss/utilities";
+
+@import './fonts.css';
+@import '../components/UI/Button/styles.css';
+@import '../components/UI/NavButton/styles.css';
+@import '../components/UI/Badges/styles.css';
+@import '../components/Navigation/Navbar/styles.css';
+@import '../components/Layout/styles.css';
+@import '../components/Profile/styles.css';
+@import '../components/MatchResult/styles.css';
+@import '../components/MatchResult/MatchDetails/styles.css';
+@import '../components/Cards/MapCard/styles.css';
+@import '../components/Cards/AgentCard/styles.css';
+
+#__next, #brimstone-app {
+  @apply flex flex-col h-full;
+}
+
+html {
+  height: 100%;
+  font-family: 'Heebo-Light', Arial, sans-serif;
+}
+
+body {
+  @apply text-white m-0 p-0 w-full h-full overflow-x-hidden bg-general-background;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Heebo-Medium', Arial, sans-serif;
+}
+
+p {
+  font-family: 'Heebo-Light', Arial, sans-serif;
+}
+
+.flex-center-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-between-center {
+  @apply flex justify-between items-center;
+}
+
+
+/* temp */
+.weapons-page-wrapper {
+  @apply w-auto m-auto max-w-full;
+}
+.weapons-page {
+  @apply flex items-center;
+  min-height: calc(100vh - 380px);
+}
+.weapons-page > div {
+  @apply flex flex-col items-stretch w-full h-full;
+  min-height: calc(100vh - 380px);
+}
+.weapons-title {
+  @apply flex items-center my-4 mx-0;
+  height: 80px;
+}
+.weapons-grid {
+  @apply grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 225px;
+  gap: 1rem;
+}
+@screen lg {
+  .weapons-page-wrapper {
+    @apply relative flex-1 my-0 mx-auto;
+    width: 1016px;
+  }
+}

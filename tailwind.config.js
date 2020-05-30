@@ -1,6 +1,7 @@
 const { colors } = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  purge: [ './src/pages/**/*.{js,jsx,ts,tsx}', './src/components/**/*.{js,jsx,ts,tsx}' ],
   theme: {
     zIndex: {
       '1': 1,
@@ -36,6 +37,9 @@ module.exports = {
         '0375': '0.375rem',
         '04': '0.4rem',
         '14': '1.4rem'
+      },
+      height: {
+        '14': '3.5rem'
       },
       maxWidth: {
         '10': '10rem'

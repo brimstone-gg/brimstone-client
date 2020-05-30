@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className='navbar'>
           <div className='flex-between-center py-4 flex-row'>
             <Link href='/'>
-              <a className='text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none'>Brimstone.GG</a>
+              <a className='text-lg tracking-widest text-main-text uppercase rounded-lg focus:outline-none'>Brimstone.GG</a>
             </Link>
             <button className='md:hidden rounded-lg focus:outline-none focus:shadow-outline' onClick={() => setMobileOpen(!mobileOpen)}>
               <svg fill='currentColor' viewBox='0 0 20 20' className='w-6 h-6'>

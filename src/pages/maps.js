@@ -1,5 +1,5 @@
-import Layout from '../components/Layout'
-import MapCard from '../components/Cards/MapCard'
+import Layout from '@/components/Layout'
+import MapCard from '@/components/Cards/MapCard'
 
 import { data } from '../data/maps.json'
 

@@ -1,9 +1,7 @@
-import fetch from 'isomorphic-unfetch'
+import Layout from '@/components/Layout'
+import Profile from '@/components/Profile'
 
-import Layout from '../../../components/Layout'
-import Profile from '../../../components/Profile'
-
-import { API_URL } from '../../../utils/API'
+import { API_URL } from '@/utils/API'
 
 const UserProfile = props => {
   const { profile } = props

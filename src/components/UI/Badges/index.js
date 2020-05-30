@@ -1,4 +1,4 @@
-import { capitalize } from '../../../utils/helpers'
+import { capitalize } from '@/utils/helpers'
 
 export const ProfileBadge = ({ type }) => {
   if (!type) return null

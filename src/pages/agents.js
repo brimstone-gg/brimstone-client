@@ -1,5 +1,5 @@
-import Layout from '../components/Layout'
-import AgentCard from '../components/Cards/AgentCard'
+import Layout from '@/components/Layout'
+import AgentCard from '@/components/Cards/AgentCard'
 
 import { data } from '../data/agents.json'
 

@@ -27,7 +27,9 @@ module.exports = {
         'badge-admin': '#800000',
         'badge-mod': '#006580',
         'badge-support': '#26a726',
-        'badge-user': '#928989'
+        'badge-user': '#928989',
+        'search-nav-border': '#222c3c',
+        'card-border': '#233146'
       },
       spacing: {
         '015': '0.15rem',

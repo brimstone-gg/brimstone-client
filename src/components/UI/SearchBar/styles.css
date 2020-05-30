@@ -1,0 +1,37 @@
+.search-bar-input {
+  @apply bg-general-background h-14 w-full px-5 pr-10 rounded-lg text-nav-text text-sm border border-teal-900 tracking-wider transition duration-100 ease-in-out;
+}
+.search-bar-input:focus {
+  @apply outline-none shadow-xl;
+}
+.search-bar-icon {
+  @apply absolute right-0 top-0 mr-3 h-full flex items-center text-nav-text;
+}
+.search-bar-icon:focus {
+  @apply outline-none;
+}
+.search-bar-icon-svg {
+  @apply h-4 w-4 m-2 fill-current;
+}
+
+.home__search-bar {
+  @apply relative text-gray-600 mx-auto w-full;
+}
+.nav__search-bar {
+  @apply relative text-gray-600 mx-auto w-full hidden;
+}
+
+@screen lg {
+  .home__search-bar {
+    @apply w-1/2;
+  }
+  .nav__search-bar {
+    @apply w-3/5 mx-auto;
+  }
+}
+
+@screen md {
+  .nav__search-bar {
+    @apply block;
+  }
+}

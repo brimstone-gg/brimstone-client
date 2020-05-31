@@ -25,6 +25,6 @@ export async function getStaticPaths() {
   const allPaths = await getMapPaths()
   return {
     paths: allPaths?.map(({ page }) => page) ?? [],
-    fallback: true
+    fallback: false
   }
 }

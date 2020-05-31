@@ -34,7 +34,11 @@ const Navbar = () => {
             <Link href='/'>
               <a className='text-lg tracking-widest text-main-text uppercase rounded-lg focus:outline-none'>Brimstone.GG</a>
             </Link>
-            <button className='md:hidden rounded-lg focus:outline-none focus:shadow-outline' onClick={() => setMobileOpen(!mobileOpen)}>
+            <button
+              className='md:hidden rounded-lg focus:outline-none focus:shadow-outline'
+              aria-label='open and close mobile menu button'
+              onClick={() => setMobileOpen(!mobileOpen)}
+            >
               <svg fill='currentColor' viewBox='0 0 20 20' className='w-6 h-6'>
                 {!mobileOpen ? (
                   <path

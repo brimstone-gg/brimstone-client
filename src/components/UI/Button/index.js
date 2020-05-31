@@ -7,7 +7,7 @@ const Button = props => {
   const btnType = submit ? 'submit' : 'button'
 
   const MyButton = () => (
-    <button className={`Button-module--button Button-module ${typeClass}`} type={btnType}>
+    <button className={`Button-module--button Button-module ${typeClass}`} type={btnType} aria-label='button'>
       <p className='Button-module--label'>
         <span className='Button-module--hover-mask Button-module--red'></span>
         <span className='Button-module--label-text'>{children}</span>

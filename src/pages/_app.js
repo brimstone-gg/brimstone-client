@@ -8,8 +8,9 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>Brimstone.GG - VALORANT Statistics</title>
+        <title>Brimstone.GG - VALORANT Statistics, Agents, Maps, Weapons and More!</title>
         <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width' />
+        <meta name='description' content='VALORANT Statistics, Agents, Maps, Weapons and More!' />
       </Head>
       <>
         <NextNprogress

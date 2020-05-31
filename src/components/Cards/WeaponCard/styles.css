@@ -12,25 +12,24 @@
   background: linear-gradient(to top, rgba(19, 28, 46, 0.7) 10%, transparent 100%);
 }
 .weapon-hero {
-  @apply block absolute w-auto;
+  @apply block absolute h-full w-auto;
   top: 50%;
   left: 50%;
-  height: 110%;
   max-width: inherit;
   transform: translate(-50%, -50%);
   transition: all 0.35s ease-in-out 0s;
 }
 .weapons-grid {
   @apply grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-auto-rows: 225px;
   gap: 1rem;
 }
 .weapon-name {
   @apply absolute uppercase text-left z-1;
-  bottom: 1.5rem;
-  left: 2.5rem;
-  font-size: 1.75rem;
+  bottom: 1rem;
+  left: 1.75rem;
+  font-size: 1.375rem;
   font-family: 'Heebo-Regular', Arial, sans-serif;
 }
 .weapon-block:hover .weapon-hero {

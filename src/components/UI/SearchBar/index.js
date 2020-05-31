@@ -10,11 +10,11 @@ import theme from './theme.styles'
 const searchSuggestions = [
   {
     title: 'Agents',
-    suggestions: [...agents]
+    suggestions: [ ...agents ]
   },
   {
     title: 'Maps',
-    suggestions: [...maps]
+    suggestions: [ ...maps ]
   }
 ]
 
@@ -43,14 +43,14 @@ const getSectionSuggestions = section => section.suggestions
 
 const SearchBar = ({ type }) => {
   const router = useRouter()
-  const [value, setValue] = useState('')
-  const [suggestions, setSuggestions] = useState([])
+  const [ value, setValue ] = useState('')
+  const [ suggestions, setSuggestions ] = useState([])
 
   const onSuggestionsFetchRequested = ({ value }) => setSuggestions(getSuggestions(value))
   const onSuggestionsClearRequested = () => setSuggestions([])
   const onChange = (event, { newValue, method }) => {
     if (method === 'click' || method === 'enter') {
-      const link = [...agents, ...maps].filter(val => val.name === newValue).map(val => val.page)[0]
+      const link = [ ...agents, ...maps ].filter(val => val.name === newValue).map(val => val.path)[0]
       router.push(link)
     }
 

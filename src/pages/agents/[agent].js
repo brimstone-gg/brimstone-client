@@ -24,7 +24,7 @@ export async function getStaticProps({ params }) {
 export async function getStaticPaths() {
   const allPaths = await getAgentPaths()
   return {
-    paths: allPaths?.map(({ page }) => page) ?? [],
+    paths: allPaths?.map(({ path }) => path) ?? [],
     fallback: false
   }
 }

@@ -9,7 +9,7 @@
   @apply outline-none shadow-lg;
 }
 .react-autosuggest__suggestions-container {
-  @apply rounded-lg overflow-hidden z-1;
+  @apply rounded-lg overflow-hidden z-1 shadow-lg;
 }
 .react-autosuggest__section-container--first {
   @apply pt-2;
@@ -48,7 +48,7 @@
 }
 
 .search-bar-suggestions {
-  @apply absolute bg-general-background py-2 rounded-lg w-full;
+  @apply absolute bg-general-background py-2 rounded-lg w-full shadow-lg;
 }
 
 .home__search-bar {

@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 const MapCard = ({ data }) => {
   return (
-    <Link href={data.page}>
+    <Link href={data.path}>
       <a className='map-block'>
-        <img src={data.image} className='map-hero' />
+        <img src={data.images.large} className='map-hero' />
         <h2 className='map-name'>{data.name}</h2>
       </a>
     </Link>

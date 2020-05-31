@@ -10,7 +10,7 @@ const Layout = props => {
       </div>
       <Navbar />
       <main id='main'>
-        <div className='container layout-container mx-auto px-4 md:px-6 lg:px-8'>{props.children}</div>
+        <div className='content-wrapper container'>{props.children}</div>
       </main>
     </>
   )

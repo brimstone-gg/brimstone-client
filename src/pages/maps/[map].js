@@ -3,7 +3,7 @@ import Layout from '@/components/Layout'
 const MapPage = () => {
   return (
     <Layout>
-      <h1>Individual Map Page</h1>
+      <h1 className='mt-2'>Individual Map Page</h1>
     </Layout>
   )
 }

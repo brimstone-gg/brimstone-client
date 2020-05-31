@@ -2,7 +2,7 @@
   @apply w-auto m-auto max-w-full;
 }
 .agent-block {
-  @apply relative overflow-hidden;
+  @apply relative overflow-hidden border border-card-border;
   border-radius: 5px;
 }
 .agent-block:after {
@@ -21,7 +21,7 @@
 }
 .agents-grid {
   @apply grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-auto-rows: 225px;
   gap: 1rem;
 }

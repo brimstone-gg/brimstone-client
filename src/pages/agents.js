@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import AgentCard from '@/components/Cards/AgentCard'
 
-import { data } from '../data/agents.json'
+import { agents } from '../data/agents.json'
 
 const Agents = () => {
   return (
@@ -13,7 +13,7 @@ const Agents = () => {
               <h1 className='text-2xl'>Valorant Agents</h1>
             </div>
             <div className='agents-grid'>
-              {data.map((el, i) => (
+              {agents.map((el, i) => (
                 <AgentCard data={el} key={i} />
               ))}
             </div>

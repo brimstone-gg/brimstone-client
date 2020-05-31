@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import CustomLink from '../CustomLink'
+
+import SearchBar from '@/UI/SearchBar'
 
 const NavLinks = () => {
   return (
@@ -20,6 +23,7 @@ const NavLinks = () => {
 }
 
 const Navbar = () => {
+  const { pathname } = useRouter()
   const [ mobileOpen, setMobileOpen ] = useState(false)
 
   return (
@@ -48,6 +52,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
+          {pathname !== '/' && <SearchBar type='compact' />}
           <nav className={'flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row ' + (mobileOpen ? 'flex' : 'hidden')}>
             <NavLinks />
           </nav>

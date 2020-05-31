@@ -1,18 +1,18 @@
 {
-  "data": [
+  "maps": [
     {
-      "map_name": "Haven",
-      "map_image": "/images/maps/haven-large.jpg",
+      "name": "Haven",
+      "image": "/images/maps/haven-large.jpg",
       "page": "/maps/haven"
     },
     {
-      "map_name": "Bind",
-      "map_image": "/images/maps/bind-large.jpg",
+      "name": "Bind",
+      "image": "/images/maps/bind-large.jpg",
       "page": "/maps/bind"
     },
     {
-      "map_name": "Split",
-      "map_image": "/images/maps/split-large.jpg",
+      "name": "Split",
+      "image": "/images/maps/split-large.jpg",
       "page": "/maps/split"
     }
   ]

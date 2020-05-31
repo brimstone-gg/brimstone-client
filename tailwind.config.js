@@ -54,6 +54,9 @@ module.exports = {
       },
       screens: {
         xs: { max: '512px' }
+      },
+      inset: {
+        '20': '20%'
       }
     }
   }

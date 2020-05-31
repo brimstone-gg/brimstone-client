@@ -1,8 +1,41 @@
+.react-autosuggest__container {
+  @apply flex flex-col w-full;
+}
+.react-autosuggest__input {
+  @apply bg-general-background h-14 w-full px-5 pr-10 rounded-lg text-nav-text text-sm border tracking-wider transition duration-100 ease-in-out;
+  border-color: #233e52;
+}
+.react-autosuggest__input--focused {
+  @apply outline-none shadow-lg;
+}
+.react-autosuggest__suggestions-container {
+  @apply rounded-lg overflow-hidden z-1;
+}
+.react-autosuggest__section-container--first {
+  @apply pt-2;
+}
+.react-autosuggest__section-container {
+  @apply bg-general-background pb-2 w-full text-left;
+}
+.react-autosuggest__section-title {
+  @apply text-white py-2 px-4;
+}
+.react-autosuggest__suggestions-list {
+  @apply block text-nav-text;
+}
+.react-autosuggest__suggestion {
+  padding: 0.35rem 1rem;
+}
+.react-autosuggest__suggestion--highlighted {
+  @apply text-white cursor-pointer;
+  background: #3C366B;
+}
+
 .search-bar-input {
-  @apply bg-general-background h-14 w-full px-5 pr-10 rounded-lg text-nav-text text-sm border border-teal-900 tracking-wider transition duration-100 ease-in-out;
+  @apply bg-general-background h-10 w-full px-5 pr-10 rounded-lg text-nav-text text-sm border border-teal-900 tracking-wider transition duration-100 ease-in-out;
 }
 .search-bar-input:focus {
-  @apply outline-none shadow-xl;
+  @apply outline-none shadow-lg;
 }
 .search-bar-icon {
   @apply absolute right-0 top-0 mr-3 h-full flex items-center text-nav-text;
@@ -14,19 +47,35 @@
   @apply h-4 w-4 m-2 fill-current;
 }
 
+.search-bar-suggestions {
+  @apply absolute bg-general-background py-2 rounded-lg w-full;
+}
+
 .home__search-bar {
-  @apply relative text-gray-600 mx-auto w-full;
+  @apply relative text-gray-600 w-full;
 }
 .nav__search-bar {
-  @apply relative text-gray-600 mx-auto w-full hidden;
+  @apply relative text-gray-600 w-full hidden;
+}
+.nav__search-bar > input {
+  @apply outline-none;
+}
+.nav__search-bar > input:focus {
+  @apply shadow-lg;
 }
 
 @screen lg {
   .home__search-bar {
-    @apply w-1/2;
+    @apply w-full;
   }
   .nav__search-bar {
     @apply w-3/5 mx-auto;
+  }
+  .search-bar-suggestions {
+    @apply w-3/5 left-20;
+  }
+  .react-autosuggest__container {
+    @apply w-1/2;
   }
 }
 

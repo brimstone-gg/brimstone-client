@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout'
 import MapCard from '@/components/Cards/MapCard'
 
-import { data } from '../data/maps.json'
+import { maps } from '../data/maps.json'
 
 const Maps = () => {
   return (
@@ -13,7 +13,7 @@ const Maps = () => {
               <h1 className='text-2xl'>Valorant Maps</h1>
             </div>
             <div className='maps-grid'>
-              {data.map((el, i) => (
+              {maps.map((el, i) => (
                 <MapCard data={el} key={i} />
               ))}
             </div>

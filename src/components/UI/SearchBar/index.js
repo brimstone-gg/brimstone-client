@@ -8,6 +8,9 @@ import { sidearms, smgs, shotguns, rifles, snipers, heavies } from '../../../dat
 
 import theme from './theme.styles'
 
+const allWeapons = [ ...sidearms, ...smgs, ...shotguns, ...rifles, ...snipers, ...heavies ]
+const allAvailable = [ ...agents, ...maps, ...allWeapons ]
+
 const searchSuggestions = [
   {
     title: 'Agents',
@@ -19,7 +22,7 @@ const searchSuggestions = [
   },
   {
     title: 'Weapons',
-    suggestions: [ ...sidearms, ...smgs, ...shotguns, ...rifles, ...snipers, ...heavies ]
+    suggestions: [ ...allWeapons ]
   }
 ]
 
@@ -42,7 +45,15 @@ const getSuggestions = value => {
 }
 
 const getSuggestionValue = suggestion => suggestion.name
-const renderSuggestion = suggestion => <span>{suggestion.name}</span>
+const renderSuggestion = suggestion => {
+  const image = allAvailable.filter(val => val.name === suggestion.name).map(val => val.images.search)
+  return (
+    <div className='inline-flex'>
+      <img src={image} alt={suggestion.name} className='h-6 w-6 mr-2 rounded-full object-cover' />
+      <span className='flex items-center'>{suggestion.name}</span>
+    </div>
+  )
+}
 const renderSectionTitle = section => <strong>{section.title}</strong>
 const getSectionSuggestions = section => section.suggestions
 
@@ -55,7 +66,7 @@ const SearchBar = ({ type }) => {
   const onSuggestionsClearRequested = () => setSuggestions([])
   const onChange = (event, { newValue, method }) => {
     if (method === 'click' || method === 'enter') {
-      const link = [ ...agents, ...maps ].filter(val => val.name === newValue).map(val => val.path)[0]
+      const link = allAvailable.filter(val => val.name === newValue).map(val => val.path)[0]
       router.push(link)
     }
 

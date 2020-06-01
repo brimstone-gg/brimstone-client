@@ -9,21 +9,24 @@
   @apply outline-none shadow-lg;
 }
 .react-autosuggest__suggestions-container {
-  @apply rounded-lg overflow-hidden z-1 shadow-lg;
+  @apply bg-navbar rounded-lg overflow-hidden z-1 shadow-lg;
 }
 .react-autosuggest__section-container--first {
   @apply pt-2;
 }
 .react-autosuggest__section-container {
-  @apply bg-general-background pb-2 w-full text-left;
+  @apply pb-2 w-full text-left;
 }
 .react-autosuggest__section-title {
-  @apply text-white py-2 px-4;
+  @apply py-1 px-4 text-xs select-none;
+  color: #accfe4;
 }
 .react-autosuggest__suggestions-list {
   @apply block text-nav-text;
 }
 .react-autosuggest__suggestion {
+  @apply font-extrabold text-base flex;
+  color: #ecefff;
   padding: 0.35rem 1rem;
 }
 .react-autosuggest__suggestion--highlighted {
@@ -48,7 +51,7 @@
 }
 
 .search-bar-suggestions {
-  @apply absolute bg-general-background py-2 rounded-lg w-full shadow-lg;
+  @apply absolute bg-navbar py-2 rounded-lg w-full shadow-lg;
 }
 
 .home__search-bar {

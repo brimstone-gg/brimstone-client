@@ -6,7 +6,8 @@
       "class": "Initiator",
       "path": "/agents/breach",
       "images": {
-        "profile": "/images/agents/profile/breach.png"
+        "profile": "/images/agents/profile/breach.png",
+        "search": "images/agents/headshot/breach.png"
       }
     },
     {
@@ -15,7 +16,8 @@
       "class": "Controller",
       "path": "/agents/brimstone",
       "images": {
-        "profile": "/images/agents/profile/brimstone.png"
+        "profile": "/images/agents/profile/brimstone.png",
+        "search": "images/agents/headshot/brimstone.png"
       }
     },
     {
@@ -24,7 +26,8 @@
       "class": "Sentinel",
       "path": "/agents/cypher",
       "images": {
-        "profile": "/images/agents/profile/cypher.png"
+        "profile": "/images/agents/profile/cypher.png",
+        "search": "images/agents/headshot/cypher.png"
       }
     },
     {
@@ -33,7 +36,8 @@
       "class": "Duelist",
       "path": "/agents/jett",
       "images": {
-        "profile": "/images/agents/profile/jett.png"
+        "profile": "/images/agents/profile/jett.png",
+        "search": "images/agents/headshot/jett.png"
       }
     },
     {
@@ -42,7 +46,8 @@
       "class": "Controller",
       "path": "/agents/omen",
       "images": {
-        "profile": "/images/agents/profile/omen.png"
+        "profile": "/images/agents/profile/omen.png",
+        "search": "images/agents/headshot/omen.png"
       }
     },
     {
@@ -51,7 +56,8 @@
       "class": "Duelist",
       "path": "/agents/phoenix",
       "images": {
-        "profile": "/images/agents/profile/phoenix.png"
+        "profile": "/images/agents/profile/phoenix.png",
+        "search": "images/agents/headshot/phoenix.png"
       }
     },
     {
@@ -60,7 +66,8 @@
       "class": "Duelist",
       "path": "/agents/raze",
       "images": {
-        "profile": "/images/agents/profile/raze.png"
+        "profile": "/images/agents/profile/raze.png",
+        "search": "images/agents/headshot/raze.png"
       }
     },
     {
@@ -69,7 +76,8 @@
       "class": "Sentinel",
       "path": "/agents/sage",
       "images": {
-        "profile": "/images/agents/profile/sage.png"
+        "profile": "/images/agents/profile/sage.png",
+        "search": "images/agents/headshot/sage.png"
       }
     },
     {
@@ -78,7 +86,8 @@
       "class": "Initiator",
       "path": "/agents/sova",
       "images": {
-        "profile": "/images/agents/profile/sova.png"
+        "profile": "/images/agents/profile/sova.png",
+        "search": "images/agents/headshot/sova.png"
       }
     },
     {
@@ -87,16 +96,18 @@
       "class": "Controller",
       "path": "/agents/viper",
       "images": {
-        "profile": "/images/agents/profile/viper.png"
+        "profile": "/images/agents/profile/viper.png",
+        "search": "images/agents/headshot/viper.png"
       }
     },
     {
       "name": "Reyna",
       "key": "reyna",
-      "class": "",
+      "class": "Duelist",
       "path": "/agents/reyna",
       "images": {
-        "profile": ""
+        "profile": "/images/agents/profile/reyna.png",
+        "search": "images/agents/headshot/reyna.png"
       }
     }
   ]

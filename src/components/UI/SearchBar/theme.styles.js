@@ -23,15 +23,21 @@ module.exports = {
     borderRadius: '0.5rem'
   },
   sectionTitle: {
-    color: '#fff',
-    padding: '0.5rem 1rem'
+    color: '#accfe4',
+    padding: '0.25rem 1rem',
+    fontSize: '0.75rem',
+    userSelect: 'none'
   },
   suggestionsList: {
     display: 'block',
     color: '#89a0b5'
   },
   suggestion: {
-    padding: '0.35rem 1rem'
+    display: 'flex',
+    padding: '0.35rem 1rem',
+    fontSize: '1rem',
+    fontWeight: '800',
+    color: '#ecefff'
   },
   suggestionHighlighted: {
     background: '#3C366B',

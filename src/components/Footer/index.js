@@ -48,10 +48,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='pt-2 container mx-auto'>
-          <div className='flex items-center pt-6 pb-5 px-3 m-auto border-t border-gray-900 text-gray-200 text-sm flex-col md:flex-row'>
+        <div className='footer__bottom-wrapper container'>
+          <div className='footer__bottom'>
             <div className='text-xs'>© 2020 Brimstone.gg. All Rights Reserved.</div>
-            <div className='flex flex-row md:flex-auto md:flex-row-reverse'>
+            <div className='footer__bottom-social'>
               <a href='/' className='w-6 mx-1'>
                 <svg viewBox='0 0 24 24'>
                   <path

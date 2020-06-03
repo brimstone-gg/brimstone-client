@@ -1,11 +1,24 @@
 .footer {
   @apply mt-20;
 }
-
 .footer-inner {
  @apply bg-navbar;
 }
 
-.footer__link-header {
+.footer__link-wrapper {
+  @apply m-auto pt-6 text-gray-200 flex flex-wrap justify-between;
+}
+.footer__link-section {
+  @apply p-5 w-48;
+}
+.footer__link-section-header {
   @apply text-xs uppercase text-gray-500 font-medium;
+}
+.footer__link {
+  @apply my-3 block;
+  transition: all 0.15s ease-in-out;
+}
+.footer__link:hover {
+  @apply text-white;
+  transform: translateX(2%);
 }

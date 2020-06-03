@@ -5,43 +5,43 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer-inner'>
         <div className='container mx-auto'>
-          <div className='m-auto pt-4 text-white flex flex-wrap justify-between'>
-            <div className='p-5 w-48 '>
-              <div className='footer__link-header'>Home</div>
+          <div className='footer__link-wrapper'>
+            <div className='footer__link-section'>
+              <div className='footer__link-section-header'>Home</div>
               <Link href='/'>
-                <a className='my-3 block'>Home</a>
+                <a className='footer__link'>Home</a>
               </Link>
               <Link href='/agents'>
-                <a className='my-3 block'>Agents</a>
+                <a className='footer__link'>Agents</a>
               </Link>
               <Link href='/maps'>
-                <a className='my-3 block'>Maps</a>
+                <a className='footer__link'>Maps</a>
               </Link>
               <Link href='/weapons'>
-                <a className='my-3 block'>Weapons</a>
+                <a className='footer__link'>Weapons</a>
               </Link>
             </div>
-            <div className='p-5 w-48 '>
-              <div className='footer__link-header'>Brimstone</div>
-              <Link href='/'>
-                <a className='my-3 block'>Terms of Service</a>
+            <div className='footer__link-section'>
+              <div className='footer__link-section-header'>Brimstone</div>
+              <Link href='/terms'>
+                <a className='footer__link'>Terms of Service</a>
               </Link>
-              <Link href='/'>
-                <a className='my-3 block'>Privacy Policy</a>
+              <Link href='/privacy'>
+                <a className='footer__link'>Privacy Policy</a>
               </Link>
-              <Link href='/'>
-                <a className='my-3 block'>About Brimstone</a>
+              <Link href='/about'>
+                <a className='footer__link'>About Brimstone</a>
               </Link>
             </div>
-            <div className='p-5 w-48 '>
-              <div className='footer__link-header'>Contact</div>
-              <a className='my-3 block' href='mailto:admin@brimstone.gg'>
+            <div className='footer__link-section'>
+              <div className='footer__link-section-header'>Contact</div>
+              <a className='footer__link' href='mailto:admin@brimstone.gg'>
                 Email
               </a>
               <Link href='/'>
-                <a className='my-3 block'>Support</a>
+                <a className='footer__link'>Support</a>
               </Link>
-              <a className='my-3 block' href='https://twitter.com/brim_gg'>
+              <a className='footer__link' href='https://twitter.com/brim_gg'>
                 Twitter
               </a>
             </div>
@@ -49,56 +49,23 @@ const Footer = () => {
         </div>
 
         <div className='pt-2 container mx-auto'>
-          <div className='flex pb-5 px-3 m-auto pt-5 border-t border-gray-900 text-white text-sm flex-col md:flex-row'>
-            <div className='mt-2'>© Copyright 2020. All Rights Reserved.</div>
-            <div className='flex flex-row mt-2 md:flex-auto md:flex-row-reverse'>
-              <a href='/#' className='w-6 mx-1'>
-                <svg
-                  className='fill-current cursor-pointer text-gray-500 hover:text-gray-400'
-                  width='100%'
-                  height='100%'
-                  viewBox='0 0 24 24'
-                  version='1.1'
-                  xmlns='http://www.w3.org/2000/svg'
-                  style={{ fillRule: 'evenodd', clipRule: 'evenodd', strokeLinejoin: 'round', strokeMiterlimit: 2 }}
-                >
+          <div className='flex items-center pt-6 pb-5 px-3 m-auto border-t border-gray-900 text-gray-200 text-sm flex-col md:flex-row'>
+            <div className='text-xs'>© 2020 Brimstone.gg. All Rights Reserved.</div>
+            <div className='flex flex-row md:flex-auto md:flex-row-reverse'>
+              <a href='/' className='w-6 mx-1'>
+                <svg viewBox='0 0 24 24'>
                   <path
-                    id='Twitter'
-                    d='M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
-                  5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
-                  -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
-                  0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
-                  -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
-                  0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
-                  -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
-                  0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
-                  -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
-                  -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
-                  1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
-                  -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
-                  6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
-                  0.771,-0.67 1.054,-1.093Z'
-                  ></path>
+                    fill='currentColor'
+                    d='M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z'
+                  />
                 </svg>
               </a>
-              <a href='/#' className='w-6 mx-1'>
-                <svg
-                  className='fill-current cursor-pointer text-gray-500 hover:text-gray-400'
-                  width='100%'
-                  height='100%'
-                  viewBox='0 0 24 24'
-                  version='1.1'
-                  xmlns='http://www.w3.org/2000/svg'
-                  style={{ fillRule: 'evenodd', clipRule: 'evenodd', strokeLinejoin: 'round', strokeMiterlimit: 2 }}
-                >
+              <a href='/' className='w-6 mx-1'>
+                <svg viewBox='0 0 24 24'>
                   <path
-                    id='Facebook'
-                    d='M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
-                  5.373,-12 12,-12c6.627,0 12,5.373
-                  12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
-                  0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
-                  -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z'
-                  ></path>
+                    fill='currentColor'
+                    d='M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z'
+                  />
                 </svg>
               </a>
             </div>

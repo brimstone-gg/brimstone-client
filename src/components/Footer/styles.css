@@ -1,0 +1,11 @@
+.footer {
+  @apply mt-20;
+}
+
+.footer-inner {
+ @apply bg-navbar;
+}
+
+.footer__link-header {
+  @apply text-xs uppercase text-gray-500 font-medium;
+}

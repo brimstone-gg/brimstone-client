@@ -1,4 +1,5 @@
 import Navbar from '../Navigation/Navbar'
+import Footer from '../Footer'
 
 const Layout = props => {
   return (
@@ -12,6 +13,7 @@ const Layout = props => {
       <main id='main'>
         <div className='content-wrapper container'>{props.children}</div>
       </main>
+      <Footer />
     </>
   )
 }

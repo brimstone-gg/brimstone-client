@@ -17,6 +17,7 @@
 @import '../components/Cards/MapCard/styles.css';
 @import '../components/Cards/AgentCard/styles.css';
 @import '../components/Cards/WeaponCard/styles.css';
+@import '../components/Footer/styles.css';
 
 ::-webkit-scrollbar-track-piece {
   @apply bg-general-background border-none border-0;

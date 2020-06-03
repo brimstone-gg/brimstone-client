@@ -8,7 +8,7 @@ const Button = props => {
   return (
     <Link href={href}>
       <a>
-        <button className={`NavButton-module--button NavButton-module ${typeClass}`} type='button'>
+        <button className={`NavButton-module--button NavButton-module ${typeClass}`} type='button' aria-label='navigation button'>
           <p className='NavButton-module--label'>
             <span className='NavButton-module--hover-mask NavButton-module--red'></span>
             <span className='NavButton-module--label-text'>{children}</span>

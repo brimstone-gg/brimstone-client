@@ -5,7 +5,7 @@ const Layout = props => {
     <>
       <div className='bg-image-wrapper'>
         <div className='bg-image'>
-          <img alt='' className='bg-image-img' src='/images/background.jpg' />
+          <img alt='brimstone background image' className='bg-image-img' src='/images/background.jpg' />
         </div>
       </div>
       <Navbar />

@@ -1,0 +1,351 @@
+{
+  "sidearms": [
+    {
+      "name": "Classic",
+      "key": "classic",
+      "path": "/weapons/classic",
+      "cost": 0,
+      "magazine": 12,
+      "fire": {
+        "primary": {
+          "mode": "Semi-Automatic",
+          "rate": "6.75 rounds/sec"
+        },
+        "alt": {
+          "mode": "3-Round Burst, spread increase",
+          "rate": "2.22 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/classic.png",
+        "search": "/images/weapons/search/classic.png"
+      }
+    },
+    {
+      "name": "Shorty",
+      "key": "shorty",
+      "path": "/weapons/shorty",
+      "cost": 200,
+      "magazine": 2,
+      "fire": {
+        "primary": {
+          "gun_type": "Semi-Automatic",
+          "fire_rate": "3.3 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/shorty.png",
+        "search": "/images/weapons/search/shorty.png"
+      }
+    },
+    {
+      "name": "Frenzy",
+      "key": "frenzy",
+      "path": "/weapons/frenzy",
+      "cost": 400,
+      "magazine": 13,
+      "fire": {
+        "primary": {
+          "gun_type": "Full-Automatic",
+          "fire_rate": "10 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/frenzy.png",
+        "search": "/images/weapons/search/frenzy.png"
+      }
+    },
+    {
+      "name": "Ghost",
+      "key": "ghost",
+      "path": "/weapons/ghost",
+      "cost": 500,
+      "magazine": 15,
+      "fire": {
+        "primary": {
+          "type": "Semi-Automatic",
+          "rate": "6.75 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/ghost.png",
+        "search": "/images/weapons/search/ghost.png"
+      }
+    },
+    {
+      "name": "Sheriff",
+      "key": "sheriff",
+      "path": "/weapons/sheriff",
+      "cost": 800,
+      "magazine": 6,
+      "fire": {
+        "primary": {
+          "type": "Semi-Automatic",
+          "rate": "4 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/sheriff.png",
+        "search": "/images/weapons/search/sheriff.png"
+      }
+    }
+  ],
+  "smgs": [
+    {
+      "name": "Stinger",
+      "key": "stinger",
+      "path": "/weapons/stinger",
+      "cost": 1000,
+      "magazine": 20,
+      "fire": {
+        "primary": {
+          "mode": "Full-Automatic",
+          "rate": "18 rounds/sec"
+        },
+        "alt": {
+          "mode": "Zoom mode (1.15x), 4-Round Burst, spread reduction",
+          "rate": "4 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/stinger.png",
+        "search": "/images/weapons/search/stinger.png"
+      }
+    },
+    {
+      "name": "Spectre",
+      "key": "spectre",
+      "path": "/weapons/spectre",
+      "cost": 1600,
+      "magazine": 30,
+      "fire": {
+        "primary": {
+          "mode": "Full-Automatic",
+          "rate": "13.33 rounds/sec"
+        },
+        "alt": {
+          "mode": "Zoom mode (1.15x), slight spread reduction",
+          "rate": "12 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/spectre.png",
+        "search": "/images/weapons/search/spectre.png"
+      }
+    }
+  ],
+  "shotguns": [
+    {
+      "name": "Bucky",
+      "key": "bucky",
+      "path": "/weapons/bucky",
+      "cost": 900,
+      "magazine": 5,
+      "fire": {
+        "primary": {
+          "mode": "Semi-Automatic",
+          "rate": "1.1 rounds/sec"
+        },
+        "alt": {
+          "mode": "Semi-Automatic Air Burst (Extended primary fire shot)",
+          "rate": "1.1 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/bucky.png",
+        "search": "/images/weapons/search/bucky.png"
+      }
+    },
+    {
+      "name": "Judge",
+      "key": "judge",
+      "path": "/weapons/judge",
+      "cost": 1500,
+      "magazine": 7,
+      "fire": {
+        "primary": {
+          "mode": "Full-Automatic",
+          "rate": "3.5 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/judge.png",
+        "search": "/images/weapons/search/judge.png"
+      }
+    }
+  ],
+  "rifles": [
+    {
+      "name": "Bulldog",
+      "key": "bulldog",
+      "path": "/weapons/bulldog",
+      "cost": 2100,
+      "magazine": 24,
+      "fire": {
+        "primary": {
+          "mode": "Full-Automatic",
+          "rate": "9.15 rounds/sec"
+        },
+        "alt": {
+          "mode": "Zoom (1.25x), 3-Round Burst",
+          "rate": "3 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/bulldog.png",
+        "search": "/images/weapons/search/bulldog.png"
+      }
+    },
+    {
+      "name": "Guardian",
+      "key": "guardian",
+      "path": "/weapons/guardian",
+      "cost": 2700,
+      "magazine": 12,
+      "fire": {
+        "primary": {
+          "mode": "Semi-Automatic",
+          "rate": "6.5 rounds/sec"
+        },
+        "alt": {
+          "mode": "Zoom (1.5x), slight spread reduction",
+          "rate": "6.5 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/guardian.png",
+        "search": "/images/weapons/search/guardian.png"
+      }
+    },
+    {
+      "name": "Phantom",
+      "key": "phantom",
+      "path": "/weapons/phantom",
+      "cost": 2900,
+      "magazine": 30,
+      "fire": {
+        "primary": {
+          "mode": "Full-Automatic",
+          "rate": "11 rounds/sec"
+        },
+        "alt": {
+          "mode": "Zoom (1.25x). Slight spread reduction",
+          "rate": "9.9 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/shorty.png",
+        "search": "/images/weapons/search/shorty.png"
+      }
+    },
+    {
+      "name": "Vandal",
+      "key": "vandal",
+      "path": "/weapons/vandal",
+      "cost": 2900,
+      "magazine": 25,
+      "fire": {
+        "primary": {
+          "mode": "Full-Automatic",
+          "rate": "9.25 rounds/sec"
+        },
+        "alt": {
+          "mode": "Zoom mode (1.25x), slight spread reduction",
+          "rate": "8.32 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/shorty.png",
+        "search": "/images/weapons/search/shorty.png"
+      }
+    }
+  ],
+  "snipers": [
+    {
+      "name": "Marshal",
+      "key": "marshal",
+      "path": "/weapons/marshal",
+      "cost": 1100,
+      "magazine": 5,
+      "fire": {
+        "primary": {
+          "mode": "Semi-Automatic",
+          "rate": "1.5 rounds/sec"
+        },
+        "alt": {
+          "mode": "Dual-Zoom Mode (2.5x), significant spread reduction",
+          "rate": "1.2 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/marshal.png",
+        "search": "/images/weapons/search/marshal.png"
+      }
+    },
+    {
+      "name": "Operator",
+      "key": "operator",
+      "path": "/weapons/operator",
+      "cost": 4500,
+      "magazine": 5,
+      "fire": {
+        "primary": {
+          "mode": "Semi-Automatic",
+          "rate": "0.75 rounds/sec"
+        },
+        "alt": {
+          "mode": "Dual-Zoom Mode (2.5x, 5x), significant spread reduction",
+          "rate": "0.75 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/operator.png",
+        "search": "/images/weapons/search/operator.png"
+      }
+    }
+  ],
+  "heavies": [
+    {
+      "name": "Ares",
+      "key": "ares",
+      "path": "/weapons/ares",
+      "cost": 1600,
+      "magazine": 50,
+      "fire": {
+        "primary": {
+          "mode": "Full-Automatic",
+          "rate": "10 -> 13 rounds/sec (increasing during fire)"
+        },
+        "alt": {
+          "mode": "Zoom mode (1.25x), slight spread reduction",
+          "rate": "10 -> 13 rounds/sec (increasing during fire)"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/ares.png",
+        "search": "/images/weapons/search/ares.png"
+      }
+    },
+    {
+      "name": "Odin",
+      "key": "odin",
+      "path": "/weapons/odin",
+      "cost": 3200,
+      "magazine": 100,
+      "fire": {
+        "primary": {
+          "mode": "Full-Automatic",
+          "rate": "12 -> 15.6 rounds/sec (increasing during fire)"
+        },
+        "alt": {
+          "mode": "Zoom mode (1.25x), slight spread reduction",
+          "rate": "15.6 rounds/sec"
+        }
+      },
+      "images": {
+        "model": "/images/weapons/model/odin.png",
+        "search": "/images/weapons/search/odin.png"
+      }
+    }
+  ]
+}

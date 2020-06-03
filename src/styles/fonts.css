@@ -1,28 +1,35 @@
 @font-face {
   font-family: 'Heebo-Thin';
+  font-display: fallback;
   src: url('/fonts/Heebo-Thin.ttf');
 }
 @font-face {
   font-family: 'Heebo-Light';
+  font-display: fallback;
   src: url('/fonts/Heebo-Light.ttf');
 }
 @font-face {
   font-family: 'Heebo-Regular';
+  font-display: fallback;
   src: url('/fonts/Heebo-Regular.ttf');
 }
 @font-face {
   font-family: 'Heebo-Medium';
+  font-display: fallback;
   src: url('/fonts/Heebo-Medium.ttf');
 }
 @font-face {
   font-family: 'Heebo-Bold';
+  font-display: fallback;
   src: url('/fonts/Heebo-Bold.ttf');
 }
 @font-face {
   font-family: 'Heebo-ExtraBold';
+  font-display: fallback;
   src: url('/fonts/Heebo-ExtraBold.ttf');
 }
 @font-face {
   font-family: 'Heebo-Black';
+  font-display: fallback;
   src: url('/fonts/Heebo-Black.ttf');
 }

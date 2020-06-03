@@ -4,8 +4,12 @@ import Autosuggest from 'react-autosuggest'
 
 import { agents } from '../../../data/agents.json'
 import { maps } from '../../../data/maps.json'
+import { sidearms, smgs, shotguns, rifles, snipers, heavies } from '../../../data/weapons.json'
 
 import theme from './theme.styles'
+
+const allWeapons = [ ...sidearms, ...smgs, ...shotguns, ...rifles, ...snipers, ...heavies ]
+const allAvailable = [ ...agents, ...maps, ...allWeapons ]
 
 const searchSuggestions = [
   {
@@ -15,6 +19,10 @@ const searchSuggestions = [
   {
     title: 'Maps',
     suggestions: [ ...maps ]
+  },
+  {
+    title: 'Weapons',
+    suggestions: [ ...allWeapons ]
   }
 ]
 
@@ -37,7 +45,15 @@ const getSuggestions = value => {
 }
 
 const getSuggestionValue = suggestion => suggestion.name
-const renderSuggestion = suggestion => <span>{suggestion.name}</span>
+const renderSuggestion = suggestion => {
+  const image = allAvailable.filter(val => val.name === suggestion.name).map(val => val.images.search)
+  return (
+    <div className='inline-flex'>
+      <img src={image} alt={suggestion.name} className='h-6 w-6 mr-2 rounded-full object-cover' />
+      <span className='flex items-center'>{suggestion.name}</span>
+    </div>
+  )
+}
 const renderSectionTitle = section => <strong>{section.title}</strong>
 const getSectionSuggestions = section => section.suggestions
 
@@ -50,7 +66,7 @@ const SearchBar = ({ type }) => {
   const onSuggestionsClearRequested = () => setSuggestions([])
   const onChange = (event, { newValue, method }) => {
     if (method === 'click' || method === 'enter') {
-      const link = [ ...agents, ...maps ].filter(val => val.name === newValue).map(val => val.page)[0]
+      const link = allAvailable.filter(val => val.name === newValue).map(val => val.path)[0]
       router.push(link)
     }
 
@@ -62,7 +78,7 @@ const SearchBar = ({ type }) => {
     return (
       <div className={searchBar}>
         <input {...inputProps} />
-        <button type='submit' className='search-bar-icon'>
+        <button type='submit' className='search-bar-icon' aria-label='search icon button'>
           <svg className='search-bar-icon-svg' xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 56.966 56.966'>
             <path d='M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z' />
           </svg>
@@ -103,23 +119,5 @@ const SearchBar = ({ type }) => {
     />
   )
 }
-
-// const SearchBarOld = ({ type }) => {
-//   const inputHeight = type === 'compact' ? 'h-10 border-search-nav-border' : 'h-14 border-teal-900'
-//   const searchBar = type === 'compact' ? 'nav__search-bar' : 'home__search-bar'
-
-//   return (
-//     <div className='flex w-full pl-4'>
-//       <div className={searchBar}>
-//         <input type='text' placeholder='Search Username, Agents, Maps and Weapons' className={`${inputHeight} search-bar-input`} />
-//         <button type='submit' className='search-bar-icon'>
-//           <svg className='search-bar-icon-svg' xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 56.966 56.966'>
-//             <path d='M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z' />
-//           </svg>
-//         </button>
-//       </div>
-//     </div>
-//   )
-// }
 
 export default SearchBar

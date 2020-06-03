@@ -18,7 +18,7 @@
       },
       "images": {
         "model": "/images/weapons/model/classic.png",
-        "search": "/images/weapons/search/classic.png"
+        "search": "/images/weapons/model/classic.png"
       }
     },
     {
@@ -35,7 +35,7 @@
       },
       "images": {
         "model": "/images/weapons/model/shorty.png",
-        "search": "/images/weapons/search/shorty.png"
+        "search": "/images/weapons/model/shorty.png"
       }
     },
     {
@@ -52,7 +52,7 @@
       },
       "images": {
         "model": "/images/weapons/model/frenzy.png",
-        "search": "/images/weapons/search/frenzy.png"
+        "search": "/images/weapons/model/frenzy.png"
       }
     },
     {
@@ -69,7 +69,7 @@
       },
       "images": {
         "model": "/images/weapons/model/ghost.png",
-        "search": "/images/weapons/search/ghost.png"
+        "search": "/images/weapons/model/ghost.png"
       }
     },
     {
@@ -86,7 +86,7 @@
       },
       "images": {
         "model": "/images/weapons/model/sheriff.png",
-        "search": "/images/weapons/search/sheriff.png"
+        "search": "/images/weapons/model/sheriff.png"
       }
     }
   ],
@@ -109,7 +109,7 @@
       },
       "images": {
         "model": "/images/weapons/model/stinger.png",
-        "search": "/images/weapons/search/stinger.png"
+        "search": "/images/weapons/model/stinger.png"
       }
     },
     {
@@ -130,7 +130,7 @@
       },
       "images": {
         "model": "/images/weapons/model/spectre.png",
-        "search": "/images/weapons/search/spectre.png"
+        "search": "/images/weapons/model/spectre.png"
       }
     }
   ],
@@ -153,7 +153,7 @@
       },
       "images": {
         "model": "/images/weapons/model/bucky.png",
-        "search": "/images/weapons/search/bucky.png"
+        "search": "/images/weapons/model/bucky.png"
       }
     },
     {
@@ -170,7 +170,7 @@
       },
       "images": {
         "model": "/images/weapons/model/judge.png",
-        "search": "/images/weapons/search/judge.png"
+        "search": "/images/weapons/model/judge.png"
       }
     }
   ],
@@ -193,7 +193,7 @@
       },
       "images": {
         "model": "/images/weapons/model/bulldog.png",
-        "search": "/images/weapons/search/bulldog.png"
+        "search": "/images/weapons/model/bulldog.png"
       }
     },
     {
@@ -214,7 +214,7 @@
       },
       "images": {
         "model": "/images/weapons/model/guardian.png",
-        "search": "/images/weapons/search/guardian.png"
+        "search": "/images/weapons/model/guardian.png"
       }
     },
     {
@@ -235,7 +235,7 @@
       },
       "images": {
         "model": "/images/weapons/model/shorty.png",
-        "search": "/images/weapons/search/shorty.png"
+        "search": "/images/weapons/model/shorty.png"
       }
     },
     {
@@ -256,7 +256,7 @@
       },
       "images": {
         "model": "/images/weapons/model/shorty.png",
-        "search": "/images/weapons/search/shorty.png"
+        "search": "/images/weapons/model/shorty.png"
       }
     }
   ],
@@ -279,7 +279,7 @@
       },
       "images": {
         "model": "/images/weapons/model/marshal.png",
-        "search": "/images/weapons/search/marshal.png"
+        "search": "/images/weapons/model/marshal.png"
       }
     },
     {
@@ -300,7 +300,7 @@
       },
       "images": {
         "model": "/images/weapons/model/operator.png",
-        "search": "/images/weapons/search/operator.png"
+        "search": "/images/weapons/model/operator.png"
       }
     }
   ],
@@ -323,7 +323,7 @@
       },
       "images": {
         "model": "/images/weapons/model/ares.png",
-        "search": "/images/weapons/search/ares.png"
+        "search": "/images/weapons/model/ares.png"
       }
     },
     {
@@ -344,7 +344,7 @@
       },
       "images": {
         "model": "/images/weapons/model/odin.png",
-        "search": "/images/weapons/search/odin.png"
+        "search": "/images/weapons/model/odin.png"
       }
     }
   ]

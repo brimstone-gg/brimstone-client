@@ -105,6 +105,7 @@ const SearchBar = ({ type }) => {
   return (
     <Autosuggest
       theme={type ? theme : undefined}
+      id='search-bar'
       suggestions={suggestions}
       onSuggestionsFetchRequested={onSuggestionsFetchRequested}
       onSuggestionsClearRequested={onSuggestionsClearRequested}

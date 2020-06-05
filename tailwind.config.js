@@ -14,6 +14,7 @@ module.exports = {
           '500': '#bdc2ca'
         },
         navbar: '#0e1726',
+        'navbar-50': 'rgba(14, 23, 38, 0.5)',
         'nav-text': '#89a0b5',
         'nav-text-hover': '#bbc9e0',
         'nav-text-active': '#d7e1ef',
@@ -57,6 +58,9 @@ module.exports = {
       },
       inset: {
         '20': '20%'
+      },
+      borderWidth: {
+        '1': '1px'
       }
     }
   }

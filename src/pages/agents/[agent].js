@@ -1,9 +1,11 @@
 import Layout from '@/components/Layout'
+import { AgentTabs } from '@/components/Navigation/Tabs'
 import { getAgent, getAgentPaths } from '@/utils/API'
 
 const AgentPage = ({ agent }) => {
   return (
     <Layout>
+      <AgentTabs />
       <h1 className='mt-2'>Individual Agent Page</h1>
       <h1>{agent.name}</h1>
     </Layout>

@@ -1,0 +1,22 @@
+.tabs-nav-wrapper {
+  @apply mb-4;
+}
+.tabs-nav {
+  @apply relative flex justify-center h-12;
+}
+.tabs-nav::before {
+  @apply absolute bg-navbar-50 w-screen h-full border-b-1 border-card-border;
+  content: "";
+  backdrop-filter: blur(15px);
+}
+.tabs-nav__link {
+  @apply relative flex items-center px-4 text-sm font-medium text-nav-text;
+  font-family: 'Heebo-Regular', Arial, sans-serif;
+  transition: all 0.15s ease-in-out;
+}
+.tabs-nav__link:hover:not(.tabs-nav__link-active) {
+  @apply text-nav-text-hover;
+}
+.tabs-nav__link-active {
+  @apply text-nav-text-active;
+}

@@ -13,7 +13,7 @@
   background: linear-gradient(to top, rgba(19, 28, 46, 0.7) 10%, transparent 100%);
 }
 .map-block:hover {
-  @apply shadow-lg;
+  @apply shadow-md;
 }
 .map-hero {
   @apply block absolute w-auto;

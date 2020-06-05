@@ -1,5 +1,5 @@
 .footer {
-  @apply mt-20;
+  @apply border-t-1 border-card-border;
 }
 .footer-inner {
  @apply bg-navbar text-center;
@@ -24,13 +24,20 @@
 }
 
 .footer__bottom-wrapper {
-  @apply pt-2 mx-auto;
+  @apply mx-auto;
 }
 .footer__bottom {
-  @apply flex items-center pt-6 pb-5 px-3 m-auto border-t border-gray-900 text-gray-200 text-sm flex-col;
+  @apply flex items-center pt-6 pb-5 px-3 m-auto border-t border-gray-900 text-gray-400 text-sm flex-col;
 }
 .footer__bottom-social {
   @apply flex flex-auto pt-3;
+}
+.footer_bottom-social-link {
+  @apply w-6 mx-1;
+  transition: all 0.15s ease-in-out;
+}
+.footer_bottom-social-link:hover {
+  @apply text-gray-100;
 }
 
 @screen sm {

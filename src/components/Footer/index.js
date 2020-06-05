@@ -52,7 +52,7 @@ const Footer = () => {
           <div className='footer__bottom'>
             <div className='text-xs'>© 2020 Brimstone.gg. All Rights Reserved.</div>
             <div className='footer__bottom-social'>
-              <a href='/' className='w-6 mx-1'>
+              <a href='https://instagram.com/brim.gg' className='footer_bottom-social-link'>
                 <svg viewBox='0 0 24 24'>
                   <path
                     fill='currentColor'
@@ -60,7 +60,7 @@ const Footer = () => {
                   />
                 </svg>
               </a>
-              <a href='/' className='w-6 mx-1'>
+              <a href='https://twitter.com/brim_gg' className='footer_bottom-social-link'>
                 <svg viewBox='0 0 24 24'>
                   <path
                     fill='currentColor'

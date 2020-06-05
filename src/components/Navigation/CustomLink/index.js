@@ -6,7 +6,7 @@ const CustomLink = ({ router, children, ...props }) => {
   const child = Children.only(children)
 
   let className = child.props.className || ''
-  if (router.pathname === props.href && props.activeClassName) {
+  if ((router.pathname === props.href || router.asPath === props.href) && props.activeClassName) {
     className = `${className} ${props.activeClassName}`.trim()
   }
 

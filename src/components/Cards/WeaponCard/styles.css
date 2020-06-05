@@ -5,12 +5,16 @@
   @apply relative overflow-hidden border border-card-border p-4;
   background-image: linear-gradient(to bottom, #151e32, #0e1726);
   border-radius: 5px;
+  transition: all 0.35s ease-in-out 0s;
 }
 .weapon-block:after {
   @apply absolute w-full bottom-0 left-0;
   content: '';
   height: 40%;
   background: linear-gradient(to top, rgba(19, 28, 46, 0.7) 10%, transparent 100%);
+}
+.weapon-block:hover {
+  @apply shadow-md;
 }
 .weapon-hero {
   @apply mt-8;

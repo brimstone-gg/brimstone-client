@@ -1,9 +1,11 @@
 import Layout from '@/components/Layout'
+import { MapTabs } from '@/components/Navigation/Tabs'
 import { getMap, getMapPaths } from '@/utils/API'
 
 const MapPage = ({ map }) => {
   return (
-    <Layout>
+    <Layout background={map.name}>
+      <MapTabs />
       <h1 className='mt-2'>Individual Map Page</h1>
       <h1>{map.name}</h1>
     </Layout>

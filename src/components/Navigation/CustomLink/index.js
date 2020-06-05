@@ -4,10 +4,16 @@ import React, { Children } from 'react'
 
 const CustomLink = ({ router, children, ...props }) => {
   const child = Children.only(children)
-
   let className = child.props.className || ''
-  if ((router.pathname === props.href || router.asPath === props.href) && props.activeClassName) {
-    className = `${className} ${props.activeClassName}`.trim()
+
+  if (props.as) {
+    if (router.asPath === props.as && props.activeClassName) {
+      className = `${className} ${props.activeClassName}`.trim()
+    }
+  } else {
+    if (router.pathname === props.href && props.activeClassName) {
+      className = `${className} ${props.activeClassName}`.trim()
+    }
   }
 
   delete props.activeClassName

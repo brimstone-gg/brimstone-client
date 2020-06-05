@@ -19,6 +19,7 @@
 @import '../components/Cards/AgentCard/styles.css';
 @import '../components/Cards/WeaponCard/styles.css';
 @import '../components/Footer/styles.css';
+@import '../pages/agents/styles.css';
 
 ::-webkit-scrollbar-track-piece {
   @apply bg-general-background border-none border-0;

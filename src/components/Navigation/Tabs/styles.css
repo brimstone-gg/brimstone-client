@@ -1,5 +1,5 @@
 .tabs-nav-wrapper {
-  @apply mb-4;
+  @apply hidden mb-4;
 }
 .tabs-nav {
   @apply relative flex justify-center h-12;
@@ -19,4 +19,10 @@
 }
 .tabs-nav__link-active {
   @apply text-nav-text-active;
+}
+
+@screen md {
+  .tabs-nav-wrapper {
+    @apply block;
+  }
 }

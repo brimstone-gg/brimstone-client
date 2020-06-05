@@ -7,7 +7,7 @@
       "path": "/agents/breach",
       "images": {
         "profile": "/images/agents/profile/breach.png",
-        "search": "images/agents/headshot/breach.png"
+        "search": "/images/agents/headshot/breach.png"
       }
     },
     {
@@ -17,7 +17,7 @@
       "path": "/agents/brimstone",
       "images": {
         "profile": "/images/agents/profile/brimstone.png",
-        "search": "images/agents/headshot/brimstone.png"
+        "search": "/images/agents/headshot/brimstone.png"
       }
     },
     {
@@ -27,7 +27,7 @@
       "path": "/agents/cypher",
       "images": {
         "profile": "/images/agents/profile/cypher.png",
-        "search": "images/agents/headshot/cypher.png"
+        "search": "/images/agents/headshot/cypher.png"
       }
     },
     {
@@ -37,7 +37,7 @@
       "path": "/agents/jett",
       "images": {
         "profile": "/images/agents/profile/jett.png",
-        "search": "images/agents/headshot/jett.png"
+        "search": "/images/agents/headshot/jett.png"
       }
     },
     {
@@ -47,7 +47,7 @@
       "path": "/agents/omen",
       "images": {
         "profile": "/images/agents/profile/omen.png",
-        "search": "images/agents/headshot/omen.png"
+        "search": "/images/agents/headshot/omen.png"
       }
     },
     {
@@ -57,7 +57,7 @@
       "path": "/agents/phoenix",
       "images": {
         "profile": "/images/agents/profile/phoenix.png",
-        "search": "images/agents/headshot/phoenix.png"
+        "search": "/images/agents/headshot/phoenix.png"
       }
     },
     {
@@ -67,7 +67,7 @@
       "path": "/agents/raze",
       "images": {
         "profile": "/images/agents/profile/raze.png",
-        "search": "images/agents/headshot/raze.png"
+        "search": "/images/agents/headshot/raze.png"
       }
     },
     {
@@ -77,7 +77,7 @@
       "path": "/agents/sage",
       "images": {
         "profile": "/images/agents/profile/sage.png",
-        "search": "images/agents/headshot/sage.png"
+        "search": "/images/agents/headshot/sage.png"
       }
     },
     {
@@ -87,7 +87,7 @@
       "path": "/agents/sova",
       "images": {
         "profile": "/images/agents/profile/sova.png",
-        "search": "images/agents/headshot/sova.png"
+        "search": "/images/agents/headshot/sova.png"
       }
     },
     {
@@ -97,7 +97,7 @@
       "path": "/agents/viper",
       "images": {
         "profile": "/images/agents/profile/viper.png",
-        "search": "images/agents/headshot/viper.png"
+        "search": "/images/agents/headshot/viper.png"
       }
     },
     {
@@ -107,7 +107,7 @@
       "path": "/agents/reyna",
       "images": {
         "profile": "/images/agents/profile/reyna.png",
-        "search": "images/agents/headshot/reyna.png"
+        "search": "/images/agents/headshot/reyna.png"
       }
     }
   ]

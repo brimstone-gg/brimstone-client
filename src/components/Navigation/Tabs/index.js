@@ -8,7 +8,7 @@ export const MapTabs = () => {
     <nav className='tabs-nav-wrapper'>
       <div className='tabs-nav'>
         {maps.map((el, i) => (
-          <CustomLink key={i} href={el.path} activeClassName='tabs-nav__link-active'>
+          <CustomLink key={i} href='/maps/[map]' as={el.path} activeClassName='tabs-nav__link-active'>
             <a className='tabs-nav__link'>{el.name}</a>
           </CustomLink>
         ))}
@@ -22,7 +22,7 @@ export const AgentTabs = () => {
     <nav className='tabs-nav-wrapper'>
       <div className='tabs-nav'>
         {agents.map((el, i) => (
-          <CustomLink key={i} href={el.path} activeClassName='tabs-nav__link-active'>
+          <CustomLink key={i} href='/agents/[agent]' as={el.path} activeClassName='tabs-nav__link-active'>
             <a className='tabs-nav__link'>{el.name}</a>
           </CustomLink>
         ))}

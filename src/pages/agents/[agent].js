@@ -15,7 +15,7 @@ const classIcons = {
 
 const AgentAbility = ({ ability }) => {
   return (
-    <div className='p-4 mx-2 text-main-text bg-general-background rounded border border-card-border shadow'>
+    <div className='p-4 text-main-text bg-general-background rounded border border-card-border shadow'>
       <div className='flex items-center pb-4'>
         <img className='w-8' src={ability.image} alt={`VALORANT ${ability.name} ability`} />
         <h3 className='pl-2 flex-1 text-lg'>{ability.name}</h3>
@@ -37,26 +37,28 @@ const AgentPage = ({ agent }) => {
       <AgentTabs />
       <div className='agents-page-wrapper'>
         <div className='agent-header'>
-          <div className='relative'>
-            <img src={agent.images.search} className='agent-image' alt={`VALORANT Agent ${agent.name}`} />
-          </div>
           <div className='agent-header-text'>
-            <div className='flex flex-col flex-1'>
-              <h1 className='agent-header__agent'>{agent.name}</h1>
-              <span className='text-xs -mt-2 font-bold text-teal-600'>Valorant Agent</span>
+            <div className='flex flex-row flex-1 items-center'>
+              <img src={agent.images.search} className='agent-image w-20' alt={`VALORANT Agent ${agent.name}`} />
+              <div className='flex flex-col ml-2'>
+                <h1 className='agent-header__agent'>{agent.name}</h1>
+                <span className='text-xs -mt-2 font-bold text-teal-600'>Valorant Agent</span>
+              </div>
             </div>
-            <div className='agent-header__class'>
-              <div className='text-xs font-bold text-teal-600'>Class</div>
-              <div className='flex items-center text-base'>
-                <svg viewBox='0 0 48 48' fill='currentColor' className='agent-header__class-icon'>
-                  <path fillRule='evenodd' clipRule='evenodd' d={classIcons[`${agent.class}`]}></path>
-                </svg>
-                <span className='text-white'>{agent.class}</span>
+            <div className='agent-header__meta'>
+              <div>
+                <div className='text-xs font-bold text-teal-600'>Class</div>
+                <div className='flex items-center text-base'>
+                  <svg viewBox='0 0 48 48' fill='currentColor' className='agent-header__meta-icon'>
+                    <path fillRule='evenodd' clipRule='evenodd' d={classIcons[`${agent.class}`]}></path>
+                  </svg>
+                  <span className='text-white'>{agent.class}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
           {agent.abilities.map((el, i) => (
             <AgentAbility ability={el} key={i} />
           ))}

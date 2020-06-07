@@ -8,7 +8,45 @@
       "images": {
         "profile": "/images/agents/profile/breach.png",
         "search": "/images/agents/headshot/breach.png"
-      }
+      },
+      "abilities": [
+        {
+          "name": "Aftershock",
+          "cost": 100,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Equip a fusion charge. Fire the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.",
+          "uses": 1,
+          "image": "/images/agents/abilities/breach/aftershock.png"
+        },
+        {
+          "name": "Flashpoint",
+          "cost": 200,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Equip a blinding charge. Fire the charge to set a fast-acting burst through the wall. The charge detonates to blind all players looking at it.",
+          "uses": 2,
+          "image": "/images/agents/abilities/breach/flashpoint.png"
+        },
+        {
+          "name": "Fault Line",
+          "cost": "Free",
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip a seismic blast. Hold Fire to increase the distance. Release to set off the quake, dazing all players in its zone and in a line up to the zone.",
+          "uses": 1,
+          "image": "/images/agents/abilities/breach/fault_line.png"
+        },
+        {
+          "name": "Rolling Thunder",
+          "cost": "7 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Equip a seismic charge. Fire to send a cascading quake through all terrain in a large cone. The quake dazes and knocks up anyone caught in it.",
+          "uses": 1,
+          "image": "/images/agents/abilities/breach/rolling_thunder.png"
+        }
+      ]
     },
     {
       "name": "Brimstone",
@@ -18,7 +56,45 @@
       "images": {
         "profile": "/images/agents/profile/brimstone.png",
         "search": "/images/agents/headshot/brimstone.png"
-      }
+      },
+      "abilities": [
+        {
+          "name": "Incendiary",
+          "cost": 300,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Equip an Incendiary grenade launcher. Fire to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.",
+          "uses": 2,
+          "image": "/images/agents/abilities/brimstone/incendiary.png"
+        },
+        {
+          "name": "Stim Beacon",
+          "cost": 100,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Equip a Stim Beacon. Fire to toss the stim beacon in front of Brimstone. Upon landing, the stim beacon will create a field that grants players RapidFire.",
+          "uses": 1,
+          "image": "/images/agents/abilities/brimstone/stim_beacon.png"
+        },
+        {
+          "name": "Sky Smoke",
+          "cost": 100,
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip a tactical map. Fire to set locations where Brimstone's smoke clouds will land. Alternate Fire to confirm, launching long-lasting smoke clouds that block vision in the selected area.",
+          "uses": 3,
+          "image": "/images/agents/abilities/brimstone/sky_smoke.png"
+        },
+        {
+          "name": "Orbital Strike",
+          "cost": "6 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Equip a tactical map. Fire to launch a lingering orbital strike laser at the selected location dealing high damage over-time to players caught in the selected area.",
+          "uses": 1,
+          "image": "/images/agents/abilities/brimstone/orbital_strike.png"
+        }
+      ]
     },
     {
       "name": "Cypher",
@@ -28,7 +104,45 @@
       "images": {
         "profile": "/images/agents/profile/cypher.png",
         "search": "/images/agents/headshot/cypher.png"
-      }
+      },
+      "abilities": [
+        {
+          "name": "Trapwire",
+          "cost": 200,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Equip a trapwire. Fire to place a destructible and covert tripware at the targeted location, creating a line that spans between the placed location and the wall opposite. Enemy players who cross a tripwire will be tethered, revealed, and dazed after a short period if they do not destroy the device in time. This ability can be picked up to be redeployed.",
+          "uses": 2,
+          "image": "/images/agents/abilities/cypher/trapwire.png"
+        },
+        {
+          "name": "Cyber Cage",
+          "cost": 100,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Instantly toss the cyber cage in front of Cypher. Activate to create a zone that blocks vision.",
+          "uses": 2,
+          "image": "/images/agents/abilities/cypher/cyber_cage.png"
+        },
+        {
+          "name": "Spycam",
+          "cost": "Free",
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip a spycam. Fire to place the spycam at the targeted location. REUSE this ability to take control of the camera's view. While in control of the camera. Fire to shoot a marking dart. This dart will reveal the location of any player struck by the dart.",
+          "uses": 1,
+          "image": "/images/agents/abilities/cypher/spycam.png"
+        },
+        {
+          "name": "Neural Theft",
+          "cost": "7 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Instantly use on a dead enemy player in your crosshairs to reveal the location of all living enemy players.",
+          "uses": 1,
+          "image": "/images/agents/abilities/cypher/neural_theft.png"
+        }
+      ]
     },
     {
       "name": "Jett",
@@ -38,7 +152,45 @@
       "images": {
         "profile": "/images/agents/profile/jett.png",
         "search": "/images/agents/headshot/jett.png"
-      }
+      },
+      "abilities": [
+        {
+          "name": "Cloudburst",
+          "cost": 100,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Instantly throw a projectile that expands into a brief vision cloud on impact with a surface. Hold the ability key to curve the cloud in the direction of your crosshair.",
+          "uses": 3,
+          "image": "/images/agents/abilities/jett/cloudburst.png"
+        },
+        {
+          "name": "Updraft",
+          "cost": 100,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Instantly propel Jett high into the air.",
+          "uses": 2,
+          "image": "/images/agents/abilities/jett/updraft.png"
+        },
+        {
+          "name": "Tailwind",
+          "cost": "Free",
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Instantly propel in the direction she is moving. If Jett is standing still, she will propel forward.",
+          "uses": 1,
+          "image": "/images/agents/abilities/jett/tailwind.png"
+        },
+        {
+          "name": "Blade Storm",
+          "cost": "6 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Equip a set of highly accurate throwing knives that recharge on an opponent. Fire to throw a single knife at your target. Alternative Fire to throw all remaining daggers at your target.",
+          "uses": 1,
+          "image": "/images/agents/abilities/jett/blade_storm.png"
+        }
+      ]
     },
     {
       "name": "Omen",
@@ -48,7 +200,45 @@
       "images": {
         "profile": "/images/agents/profile/omen.png",
         "search": "/images/agents/headshot/omen.png"
-      }
+      },
+      "abilities": [
+        {
+          "name": "Shrouded Step",
+          "cost": 100,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Equip a shadow walk ability and see its range indicator. Fire to begin a brief channel, then teleport to the marked location.",
+          "uses": 2,
+          "image": "/images/agents/abilities/omen/shrouded_step.png"
+        },
+        {
+          "name": "Paranoia",
+          "cost": 200,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Instantly fire a shadow projectile forward, briefly reducing the vision range of all players it touches. This projectile can pass straight through walls.",
+          "uses": 1,
+          "image": "/images/agents/abilities/omen/paranoia.png"
+        },
+        {
+          "name": "Dark Cover",
+          "cost": "Free",
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip a shadow orb and see its range indicator. Fire to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. Hold Alternate Fire while targeting to move the marker further away. Hold the ability key with targeting to move the market closer.",
+          "uses": 2,
+          "image": "/images/agents/abilities/omen/dark_cover.png"
+        },
+        {
+          "name": "From the Shadows",
+          "cost": "7 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Equip a tactical map. Fire to begin teleporting to the selected location. While teleporting, Omen will appear as a Shade that can be destroyed by an enemy to cancel his teleport.",
+          "uses": 1,
+          "image": "/images/agents/abilities/omen/from_the_shadows.png"
+        }
+      ]
     },
     {
       "name": "Phoenix",
@@ -58,7 +248,45 @@
       "images": {
         "profile": "/images/agents/profile/phoenix.png",
         "search": "/images/agents/headshot/phoenix.png"
-      }
+      },
+      "abilities": [
+        {
+          "name": "Blaze",
+          "cost": 200,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Equip a flame wall. Fire to create a line of flames that moves forward creating a wall that blocks vision and damages players passing through it. Hold Fire to bend the wall in the direction of your crosshair.",
+          "uses": 1,
+          "image": "/images/agents/abilities/phoenix/blaze.png"
+        },
+        {
+          "name": "Curveball",
+          "cost": 200,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Equip a flare orb that takes a curving path and detonates shortly after throwing, impairing vision. Fire to curve the flare orb to the left, detonating and blinding any player who sees the orb. Alternate fire to curve the flare orb to the right.",
+          "uses": 1,
+          "image": "/images/agents/abilities/phoenix/curveball.png"
+        },
+        {
+          "name": "Hot Hands",
+          "cost": "Free",
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip a fireball. Fire to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.",
+          "uses": 1,
+          "image": "/images/agents/abilities/phoenix/hot_hands.png"
+        },
+        {
+          "name": "Run it Back",
+          "cost": "6 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Instantly place a marker at Phoenix's location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.",
+          "uses": 1,
+          "image": "/images/agents/abilities/phoenix/run_it_back.png"
+        }
+      ]
     },
     {
       "name": "Raze",
@@ -68,37 +296,45 @@
       "images": {
         "profile": "/images/agents/profile/raze.png",
         "search": "/images/agents/headshot/raze.png"
-      }
-    },
-    {
-      "name": "Sage",
-      "key": "sage",
-      "class": "Sentinel",
-      "path": "/agents/sage",
-      "images": {
-        "profile": "/images/agents/profile/sage.png",
-        "search": "/images/agents/headshot/sage.png"
-      }
-    },
-    {
-      "name": "Sova",
-      "key": "sova",
-      "class": "Initiator",
-      "path": "/agents/sova",
-      "images": {
-        "profile": "/images/agents/profile/sova.png",
-        "search": "/images/agents/headshot/sova.png"
-      }
-    },
-    {
-      "name": "Viper",
-      "key": "viper",
-      "class": "Controller",
-      "path": "/agents/viper",
-      "images": {
-        "profile": "/images/agents/profile/viper.png",
-        "search": "/images/agents/headshot/viper.png"
-      }
+      },
+      "abilities": [
+        {
+          "name": "Boom Bot",
+          "cost": 200,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Equip a Boom Bot. Fire will deploy the bot, causing it to travel in a straight line on the ground, bouncing off walls. The Boom Bot will lock on to any enemies in its frontal cone and chase them, exploding for heavy damage if it reaches them.",
+          "uses": 1,
+          "image": "/images/agents/abilities/raze/boom_bot.png"
+        },
+        {
+          "name": "Blast Pack",
+          "cost": 200,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Instantly throw a Blast Pack that will stick to surfaces. Re-use the ability after deployment to detonate, damaging and moving anything hit. Raze isn't damaged by this ability, but will still take fall damage if launched up far enough.",
+          "uses": 1,
+          "image": "/images/agents/abilities/raze/blast_pack.png"
+        },
+        {
+          "name": "Paint Shells",
+          "cost": "Free",
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip a cluster grenade. Fire to throw the grenade, which does damage and creates sub-munitions, each doing damage to anyone in their range.",
+          "uses": 1,
+          "image": "/images/agents/abilities/raze/paint_shells.png"
+        },
+        {
+          "name": "Showstopper",
+          "cost": "6 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Raze equips a single-use rocket launcher with the ability to one-shot enemies. Damage from this ability is consistent throughout the entire blast radius.",
+          "uses": 1,
+          "image": "/images/agents/abilities/raze/showstopper.png"
+        }
+      ]
     },
     {
       "name": "Reyna",
@@ -108,7 +344,189 @@
       "images": {
         "profile": "/images/agents/profile/reyna.png",
         "search": "/images/agents/headshot/reyna.png"
-      }
+      },
+      "abilities": [
+        {
+          "name": "Leer",
+          "cost": 200,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Enemies killed by Reyna leave behind Soul Orbs that last 3 seconds. Instantly consume a nearby soul orb, rapidly healing for a short duration. Health gained through this skill exceeding 100 will decay over time. If Empress is active, this skill will automatically cast and not consume the orb.",
+          "uses": 2,
+          "image": "/images/agents/abilities/reyna/leer.png"
+        },
+        {
+          "name": "Devour",
+          "cost": 100,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Instantly consume a nearby soul orb, becoming intangible for a short duration. If Empress is active, also become invisible.",
+          "uses": 2,
+          "image": "/images/agents/abilities/reyna/devour.png"
+        },
+        {
+          "name": "Dismiss",
+          "cost": 100,
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip an ethereal destructible eye. Activate to cast the eye a short distance forward. The eye will Nearsight all enemies who look at it.",
+          "uses": 2,
+          "image": "/images/agents/abilities/reyna/dismiss.png"
+        },
+        {
+          "name": "Empress",
+          "cost": "6 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Instantly enter a frenzy, increasing firing speed, equip and reload speed dramatically. Scoring a kill renews the duration.",
+          "uses": 1,
+          "image": "/images/agents/abilities/reyna/empress.png"
+        }
+      ]
+    },
+    {
+      "name": "Sage",
+      "key": "sage",
+      "class": "Sentinel",
+      "path": "/agents/sage",
+      "images": {
+        "profile": "/images/agents/profile/sage.png",
+        "search": "/images/agents/headshot/sage.png"
+      },
+      "abilities": [
+        {
+          "name": "Barrier Orb",
+          "cost": 400,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Equip a barrier orb. Fire places a solid wall. Alternate fire rotates the targeter.",
+          "uses": 1,
+          "image": "/images/agents/abilities/sage/barrier_orb.png"
+        },
+        {
+          "name": "Slow Orb",
+          "cost": 100,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Equip an orb that slows whoever walks on them after being thrown on the ground.",
+          "uses": 2,
+          "image": "/images/agents/abilities/sage/slow_orb.png"
+        },
+        {
+          "name": "Healing Orb",
+          "cost": "Free",
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip a healing orb. Fire with your crosshairs over a damaged ally to activate a heal-over-time on them. Alternate fire while Sage is damaged to activate a self heal-over-time.",
+          "uses": 1,
+          "image": "/images/agents/abilities/sage/healing_orb.png"
+        },
+        {
+          "name": "Resurrection",
+          "cost": "7 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Equip a resurrection ability. Fire with your crosshairs placed over a dead ally to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.",
+          "uses": 1,
+          "image": "/images/agents/abilities/sage/resurrection.png"
+        }
+      ]
+    },
+    {
+      "name": "Sova",
+      "key": "sova",
+      "class": "Initiator",
+      "path": "/agents/sova",
+      "images": {
+        "profile": "/images/agents/profile/sova.png",
+        "search": "/images/agents/headshot/sova.png"
+      },
+      "abilities": [
+        {
+          "name": "Shock Bolt",
+          "cost": 100,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Equip a bow with shock bolt. Fire to send the explosive bolt forward detonating upon collision and damaging players nearby. Hold Fire to extend the range of the projectile. Alternate Fire to add up to two bounces to this arrow.",
+          "uses": 1,
+          "image": "/images/agents/abilities/sova/shock_bolt.png"
+        },
+        {
+          "name": "Owl Drone",
+          "cost": 300,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Equip an owl drone. Fire to deploy and take control of movement of the drone. While in control of the drone, Fire to shoot a marking dart. This dart will reveal the location of any player struck by the dart.",
+          "uses": 2,
+          "image": "/images/agents/abilities/sova/owl_drone.png"
+        },
+        {
+          "name": "Recon Bolt",
+          "cost": "Free",
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip a bow with recon bolt. Fire to send the bolt forward activating upon collision and revealing the location of nearby enemies caught in the line of sight of the bolt. Enemies can destroy this bolt. Hold Fire to extend the range of the projectile. Alternate Fire to add up to two bounces to this arrow.",
+          "uses": 1,
+          "image": "/images/agents/abilities/sova/recon_bolt.png"
+        },
+        {
+          "name": "Hunter’s Fury",
+          "cost": "7 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Equip a bow with three long-range, wall-piercing energy blasts. Fire to release an blast in a line in front of Sova dealing damage and revealing the location of enemies caught in the line. This ability can be RE-USED up to two more times while the ability timer is active.",
+          "uses": 1,
+          "image": "/images/agents/abilities/sova/hunters_fury.png"
+        }
+      ]
+    },
+    {
+      "name": "Viper",
+      "key": "viper",
+      "class": "Controller",
+      "path": "/agents/viper",
+      "images": {
+        "profile": "/images/agents/profile/viper.png",
+        "search": "/images/agents/headshot/viper.png"
+      },
+      "abilities": [
+        {
+          "name": "Snake Bite",
+          "cost": 100,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Equip a chemical launcher. Fire to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and slows enemies.",
+          "uses": 2,
+          "image": "/images/agents/abilities/viper/snake_bite.png"
+        },
+        {
+          "name": "Poison Cloud",
+          "cost": 200,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Equip a gas emitter. Fire to throw the emitter that perpetually remains throughout the round. Re-use the ability to create a toxic gas cloud at the cost of fuel. This ability can be re-used more than once and can be picked up to be redeployed.",
+          "uses": 1,
+          "image": "/images/agents/abilities/viper/poison_cloud.png"
+        },
+        {
+          "name": "Toxic Screen",
+          "cost": "Free",
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip a gas emitter launcher. Fire to deploy a long line of gas emitters. Re-use the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be re-used more than once.",
+          "uses": 1,
+          "image": "/images/agents/abilities/viper/toxic_screen.png"
+        },
+        {
+          "name": "Viper’s Pit",
+          "cost": "7 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Equip a chemical sprayer. Fire to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range and maximum health of players inside of it.",
+          "uses": 1,
+          "image": "/images/agents/abilities/viper/vipers_pit.png"
+        }
+      ]
     }
   ]
 }

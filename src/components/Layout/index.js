@@ -6,11 +6,7 @@ const Layout = ({ children, background }) => {
     <>
       <div className='bg-image-wrapper'>
         <div className='bg-image'>
-          <img
-            alt='brimstone background image'
-            className='bg-image-img'
-            src={background ? `/images/maps/list/${background.toLowerCase()}.jpg` : '/images/background.jpg'}
-          />
+          <img alt='brimstone background image' className='bg-image-img' src={background ?? '/images/background.jpg'} />
         </div>
       </div>
       <Navbar />

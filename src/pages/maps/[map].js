@@ -4,7 +4,7 @@ import { getMap, getMapPaths } from '@/utils/API'
 
 const MapPage = ({ map }) => {
   return (
-    <Layout background={map.name}>
+    <Layout background={`/images/maps/list/${map.name.toLowerCase()}.jpg`}>
       <MapTabs />
       <h1 className='mt-2'>Individual Map Page</h1>
       <h1>{map.name}</h1>

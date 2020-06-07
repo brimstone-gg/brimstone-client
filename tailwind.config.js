@@ -23,7 +23,7 @@ module.exports = {
         'cyan-blue': '#0f1923',
         'overlay-red': '#ff4655',
         'twitch-purple': '#9146FF',
-        'main-text': '#bbc9e0',
+        'main-text': '#d7e1ef',
         lime: '#00ff00',
         'badge-admin': '#800000',
         'badge-mod': '#006580',

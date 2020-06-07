@@ -1,14 +1,14 @@
 .agent-header {
-  @apply flex items-center h-20 my-4 text-main-text;
+  @apply flex items-center my-4 text-main-text;
 }
 .agent-header-text {
-  @apply ml-4;
+  @apply flex items-center mx-4 w-full;
 }
 .agent-header__agent {
-  @apply text-3xl;
+  @apply flex flex-1 text-3xl;
 }
 .agent-header__class {
-  @apply flex text-sm tracking-wider;
+  @apply text-sm tracking-wider;
 }
 .agent-header__class-icon {
   @apply w-5 h-5 mr-1;

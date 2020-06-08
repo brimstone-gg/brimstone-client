@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Autosuggest from 'react-autosuggest'
+import { CDN } from '@/utils/helpers'
 
 import { agents } from '../../../data/agents.json'
 import { maps } from '../../../data/maps.json'
@@ -49,7 +50,7 @@ const renderSuggestion = suggestion => {
   const image = allAvailable.filter(val => val.name === suggestion.name).map(val => val.images.search)
   return (
     <div className='inline-flex'>
-      <img src={image} alt={suggestion.name} className='h-6 w-6 mr-2 rounded-full object-cover' />
+      <img src={CDN(image)} alt={suggestion.name} className='h-6 w-6 mr-2 rounded-full object-cover' />
       <span className='flex items-center'>{suggestion.name}</span>
     </div>
   )

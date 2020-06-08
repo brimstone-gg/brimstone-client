@@ -15,7 +15,7 @@
       "path": "/maps/bind",
       "images": {
         "list": "/images/maps/list/bind.jpg",
-        "search": "/images/maps/search/haven.jpg"
+        "search": "/images/maps/search/bind.jpg"
       }
     },
     {
@@ -24,7 +24,7 @@
       "path": "/maps/split",
       "images": {
         "list": "/images/maps/list/split.jpg",
-        "search": "/images/maps/search/haven.jpg"
+        "search": "/images/maps/search/split.jpg"
       }
     },
     {

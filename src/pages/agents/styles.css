@@ -1,5 +1,5 @@
 .agent-header {
-  @apply flex items-center my-4 text-main-text;
+  @apply flex items-center my-4 text-main-text pointer-events-none;
 }
 .agent-header-text {
   @apply w-full;

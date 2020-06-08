@@ -1,12 +1,13 @@
 import Navbar from '../Navigation/Navbar'
 import Footer from '../Footer'
+import { CDN } from '@/utils/helpers'
 
 const Layout = ({ children, background }) => {
   return (
     <>
       <div className='bg-image-wrapper'>
         <div className='bg-image'>
-          <img alt='brimstone background image' className='bg-image-img' src={background ?? '/images/background.jpg'} />
+          <img alt='brimstone background image' className='bg-image-img' src={CDN(background ?? '/images/background.jpg')} />
         </div>
       </div>
       <Navbar />

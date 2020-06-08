@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import MatchResult from '../MatchResult'
 import { ProfileBadge } from '../UI/Badges'
+import { CDN } from '@/utils/helpers'
 
 import MatchDetails from '../MatchResult/MatchDetails'
 
@@ -95,7 +96,7 @@ const Profile = props => {
           <div className='px-6 pb-16'>
             <div className='flex flex-wrap justify-center'>
               <div className='profile-user-image-wrapper'>
-                <img alt={`${displayName} profile image`} src={profileImage} className='profile-user-image' />
+                <img alt={`${displayName} profile image`} src={CDN(profileImage)} className='profile-user-image' />
               </div>
               <div className='profile-user-wrapper'>
                 <div className='flex-1'>

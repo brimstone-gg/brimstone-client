@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { CDN } from '@/utils/helpers'
 
 import { data } from './placeholder.json'
 
@@ -6,7 +7,7 @@ const TableData = ({ data }) => {
   return (
     <tr className='match-table__even'>
       <td className='match-table__agent-cell'>
-        <img src='/images/agents/small/jett.png' className='match-table__agent' />
+        <img src={CDN('/images/agents/small/jett.png')} className='match-table__agent' />
       </td>
 
       <td style={{ borderLeft: '0.2rem solid rgb(255, 70, 85)' }}>

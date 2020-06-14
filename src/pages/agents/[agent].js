@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout'
 import { AgentTabs } from '@/components/Navigation/Tabs'
 import { getAgent, getAgentPaths } from '@/utils/API'
+import { CDN } from '@/utils/helpers'
 
 const classIcons = {
   Controller:
@@ -15,9 +16,9 @@ const classIcons = {
 
 const AgentAbility = ({ ability }) => {
   return (
-    <div className='p-4 text-main-text bg-general-background rounded border border-card-border shadow'>
+    <div className='p-4 text-main-text bg-navbar-50 rounded border border-card-border shadow'>
       <div className='flex items-center pb-4'>
-        <img className='w-8' src={ability.image} alt={`VALORANT ${ability.name} ability`} />
+        <img className='w-8' src={CDN(ability.image)} alt={`VALORANT ${ability.name} ability`} />
         <h3 className='pl-2 flex-1 text-lg'>{ability.name}</h3>
         <span className='pr-2 text-xs'>Key</span>
         <span className='bg-navbar rounded border-card-border text-sm font-bold px-3 py-1 pointer-events-none'>{ability.keybind}</span>
@@ -39,7 +40,7 @@ const AgentPage = ({ agent }) => {
         <div className='agent-header'>
           <div className='agent-header-text'>
             <div className='flex flex-row flex-1 items-center'>
-              <img src={agent.images.search} className='agent-image w-20' alt={`VALORANT Agent ${agent.name}`} />
+              <img src={CDN(agent.images.search)} className='agent-image w-20' alt={`VALORANT Agent ${agent.name}`} />
               <div className='flex flex-col ml-2'>
                 <h1 className='agent-header__agent'>{agent.name}</h1>
                 <span className='text-xs -mt-2 font-bold text-teal-600'>Valorant Agent</span>

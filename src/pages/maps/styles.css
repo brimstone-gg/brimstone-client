@@ -39,7 +39,7 @@
   margin-left: 20px;
 }
 .maps-map * {
-  @apply absolute w-full top-0 h-full p-3;
+  @apply absolute w-full top-0 h-full p-3 pointer-events-none;
 }
 
 .map-options {

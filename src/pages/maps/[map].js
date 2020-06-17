@@ -20,7 +20,7 @@ const MapPage = ({ map }) => {
   }
 
   return (
-    <Layout background={CDN(`/images/maps/list/${map.name.toLowerCase()}.jpg`)}>
+    <Layout background={`/images/maps/list/${map.name.toLowerCase()}.jpg`}>
       <MapTabs />
       <div className='map-page-wrapper'>
         <div className='map-info'>
@@ -29,11 +29,11 @@ const MapPage = ({ map }) => {
             <ul className='map-legend'>
               <li className='map-legend-item'>
                 <img src={CDN('/images/maps/icons/red-buy-zone.svg')} alt='Defenders Buy Zone' />
-                <span>{side === 'defending' ? 'Attackers Buy Zone' : 'Defenders Buy Zone'}</span>
+                <span>{side === 'attacking' ? 'Attackers Buy Zone' : 'Defenders Buy Zone'}</span>
               </li>
               <li className='map-legend-item'>
                 <img src={CDN('/images/maps/icons/green-buy-zone.svg')} alt='Attackers Buy Zone' />
-                <span>{side === 'attacking' ? 'Attackers Buy Zone' : 'Defenders Buy Zone'}</span>
+                <span>{side === 'defending' ? 'Attackers Buy Zone' : 'Defenders Buy Zone'}</span>
               </li>
               <li className='map-legend-item'>
                 <img src={CDN('/images/maps/icons/defenders-spawn-barrier.svg')} alt='Defenders Spawn Barrier' />

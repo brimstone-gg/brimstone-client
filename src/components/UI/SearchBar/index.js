@@ -98,7 +98,7 @@ const SearchBar = ({ type }) => {
   }
 
   const inputProps = {
-    placeholder: 'Search Username, Agents, Maps and Weapons',
+    placeholder: 'Search Username#tag, Agents, Maps and Weapons',
     value,
     onChange: onChange
   }

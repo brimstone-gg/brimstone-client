@@ -16,10 +16,20 @@
 
 .Button-module:after, 
 .Button-module:before {
-  @apply block absolute w-full left-0 border border-solid border-cyan-blue;
+  @apply block absolute w-full left-0 border border-solid;
   content: "";
   height: calc(50% - .2rem);
 }
+
+.Button-module--default:after,
+.Button-module--default:before {
+  @apply border-ice-white;
+}
+.Button-module--reversed:after,
+.Button-module--reversed:before {
+  @apply border-cyan-blue;
+}
+
 .Button-module:before {
   @apply top-0 border-b-0 rounded-tl-md;
 }

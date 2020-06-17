@@ -6,7 +6,7 @@ import { maps } from '../data/maps.json'
 const Maps = () => {
   return (
     <Layout>
-      <main className='maps-page-wrapper'>
+      <div className='maps-page-wrapper'>
         <div className='maps-page'>
           <div>
             <div className='maps-title'>
@@ -19,7 +19,7 @@ const Maps = () => {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </Layout>
   )
 }

@@ -6,6 +6,7 @@
 }
 .bg-image {
   @apply absolute top-0 left-0 right-0 bottom-0 pointer-events-none overflow-hidden;
+  z-index: -1;
 }
 .bg-image-img {
   @apply w-full opacity-100 transition-opacity;

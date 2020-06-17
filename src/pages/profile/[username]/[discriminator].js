@@ -8,9 +8,9 @@ const UserProfile = props => {
 
   return (
     <Layout>
-      <main className='profile-page'>
+      <div className='profile-page'>
         <Profile user={profile} />
-      </main>
+      </div>
     </Layout>
   )
 }

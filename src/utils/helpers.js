@@ -3,7 +3,7 @@ export const capitalize = s => {
   return s.charAt(0).toUpperCase() + s.slice(1)
 }
 
-export const CDN = url => {
+export const CDN = path => {
   const isProd = process.env.NODE_ENV === 'production'
-  return isProd ? `https://cdn.brimstone.gg${url}` : url
+  return isProd ? `https://cdn.brimstone.gg${path}` : path
 }

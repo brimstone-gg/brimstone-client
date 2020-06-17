@@ -8,7 +8,7 @@ const allWeapons = [ ...sidearms, ...smgs, ...shotguns, ...rifles, ...snipers, .
 const Weapons = () => {
   return (
     <Layout>
-      <main className='weapons-page-wrapper'>
+      <div className='weapons-page-wrapper'>
         <div className='weapons-page'>
           <div>
             <div className='weapons-title'>
@@ -21,7 +21,7 @@ const Weapons = () => {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </Layout>
   )
 }

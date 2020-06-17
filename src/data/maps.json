@@ -6,7 +6,16 @@
       "path": "/maps/haven",
       "images": {
         "list": "/images/maps/list/haven.jpg",
-        "search": "/images/maps/search/haven.jpg"
+        "search": "/images/maps/search/haven.jpg",
+        "map": {
+          "layout": "/images/maps/layout/haven-base.svg",
+          "offense": "/images/maps/layout/haven-labels-offense.svg",
+          "defense": "/images/maps/layout/haven-labels-defense.svg",
+          "walls": {
+            "offense": "/images/maps/layout/haven-walls-offense.svg",
+            "defense": "/images/maps/layout/haven-walls-defense.svg"
+          }
+        }
       }
     },
     {
@@ -15,7 +24,16 @@
       "path": "/maps/bind",
       "images": {
         "list": "/images/maps/list/bind.jpg",
-        "search": "/images/maps/search/bind.jpg"
+        "search": "/images/maps/search/bind.jpg",
+        "map": {
+          "layout": "/images/maps/layout/bind-base.svg",
+          "offense": "/images/maps/layout/bind-labels-offense.svg",
+          "defense": "/images/maps/layout/bind-labels-defense.svg",
+          "walls": {
+            "offense": "/images/maps/layout/bind-walls-offense.svg",
+            "defense": "/images/maps/layout/bind-walls-defense.svg"
+          }
+        }
       }
     },
     {
@@ -24,7 +42,16 @@
       "path": "/maps/split",
       "images": {
         "list": "/images/maps/list/split.jpg",
-        "search": "/images/maps/search/split.jpg"
+        "search": "/images/maps/search/split.jpg",
+        "map": {
+          "layout": "/images/maps/layout/split-base.svg",
+          "offense": "/images/maps/layout/split-labels-offense.svg",
+          "defense": "/images/maps/layout/split-labels-defense.svg",
+          "walls": {
+            "offense": "/images/maps/layout/split-walls-offense.svg",
+            "defense": "/images/maps/layout/split-walls-defense.svg"
+          }
+        }
       }
     },
     {
@@ -33,7 +60,16 @@
       "path": "/maps/ascent",
       "images": {
         "list": "/images/maps/list/ascent.jpg",
-        "search": "/images/maps/search/ascent.jpg"
+        "search": "/images/maps/search/ascent.jpg",
+        "map": {
+          "layout": "/images/maps/layout/ascent-base.svg",
+          "offense": "/images/maps/layout/ascent-labels-offense.svg",
+          "defense": "/images/maps/layout/ascent-labels-defense.svg",
+          "walls": {
+            "offense": "/images/maps/layout/ascent-walls-offense.svg",
+            "defense": "/images/maps/layout/ascent-walls-defense.svg"
+          }
+        }
       }
     }
   ]

@@ -6,7 +6,7 @@ import { agents } from '../data/agents.json'
 const Agents = () => {
   return (
     <Layout>
-      <main className='agents-page-wrapper'>
+      <div className='agents-page-wrapper'>
         <div className='agents-page'>
           <div>
             <div className='agents-title'>
@@ -19,7 +19,7 @@ const Agents = () => {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </Layout>
   )
 }

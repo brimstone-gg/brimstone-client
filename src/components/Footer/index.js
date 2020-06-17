@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='container mx-auto'>
           <div className='footer__link-wrapper'>
             <div className='footer__link-section'>
-              <div className='footer__link-section-header'>Home</div>
+              <div className='footer__link-section-header'>Navigation</div>
               <Link href='/'>
                 <a className='footer__link'>Home</a>
               </Link>

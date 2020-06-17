@@ -20,6 +20,7 @@
 @import '../components/Cards/WeaponCard/styles.css';
 @import '../components/Footer/styles.css';
 @import '../pages/agents/styles.css';
+@import '../pages/maps/styles.css';
 
 ::-webkit-scrollbar-track-piece {
   @apply bg-general-background border-none border-0;
@@ -62,4 +63,10 @@ p {
 
 .flex-between-center {
   @apply flex justify-between items-center;
+}
+
+.price_credits {
+  width: 14px;
+  margin-right: 5px;
+  vertical-align: top;
 }

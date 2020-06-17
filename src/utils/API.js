@@ -5,6 +5,7 @@ import { sidearms, smgs, shotguns, rifles, snipers, heavies } from '../data/weap
 const allWeapons = [ ...sidearms, ...smgs, ...shotguns, ...rifles, ...snipers, ...heavies ]
 
 export const API_URL = process.env.NODE_ENV === 'production' ? 'https://api.brimstone.gg/api/v1' : 'http://localhost:3001/api/v1'
+export const CDN_URL = 'https://cdn.brimstone.gg'
 
 export const getAgent = name => agents.filter(val => val.key === name.toLowerCase())
 export const getAgentPaths = () => agents.filter(val => val.path)

@@ -1,0 +1,104 @@
+.map-page-wrapper {
+  @apply flex w-full;
+}
+
+.map-info {
+  @apply flex flex-col;
+  width: 275px;
+}
+.maps-group {
+  @apply w-full flex flex-col bg-navbar-50 border border-card-border;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.maps-group h4 {
+  @apply text-ice-white;
+  margin-bottom: 15px;
+}
+.maps-group:last-child {
+  @apply mb-0;
+}
+.map-legend {
+  @apply flex flex-wrap flex-grow m-0 list-none;
+}
+.map-legend-item {
+  @apply relative flex items-center flex-grow w-full mb-3;
+  color: #999ba4;
+  transition: color .3s ease;
+}
+.map-legend-item img {
+  margin-right: 15px;
+}
+.map-legend-item span {
+  opacity: .8;
+}
+.maps-map {
+  @apply relative flex-1 bg-navbar-50 border border-card-border h-full;
+  height: 800px;
+  margin-left: 20px;
+}
+.maps-map * {
+  @apply absolute w-full top-0 h-full p-3;
+}
+
+.map-options {
+  @apply flex items-center flex-1 flex-col w-full;
+}
+.map-extra-options {
+  @apply flex flex-col items-center flex-1 flex-col w-full;
+}
+.map-options__button {
+  @apply bg-navbar py-2 px-4 rounded-md text-sm font-medium text-nav-text w-full text-center cursor-pointer;
+  transition: all .1s ease;
+}
+.map-options__button:not(:last-child) {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.map-options__button:last-child {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.map-options__button span {
+  opacity: .8;
+  font-family: 'Heebo-Regular', Arial, sans-serif;
+}
+.map-options__button:hover:not(.map-options__button-active) {
+  @apply text-nav-text-hover;
+  background: rgba(35, 49, 70, 0.35);
+}
+.map-options__button:focus {
+  @apply outline-none text-nav-text-active;
+}
+.map-options__button-active {
+  @apply text-nav-text-active bg-card-border;
+}
+
+.map-options__toggle {
+  @apply flex w-full items-center bg-navbar px-3 py-2 rounded-lg mt-2;
+}
+.map-options__toggle-label {
+  @apply text-sm text-nav-text flex flex-1 items-center w-full;
+  opacity: .8;
+  font-family: 'Heebo-Regular', Arial, sans-serif;
+}
+.map-options__toggle-switch {
+  @apply relative flex items-center rounded-full w-10 h-1125 transition duration-300 ease-linear;
+}
+.map-options__toggle-switch-input {
+  @apply appearance-none w-full h-full;
+}
+.map-options__toggle-switch-input:focus,
+.map-options__toggle-switch-input:active {
+  @apply outline-none;
+}
+.map-options__toggle-switch-label {
+  @apply absolute left-0 bg-navbar border-3 border-card-border mb-2 w-6 h-6 rounded-full transition transform duration-300 ease-linear cursor-pointer;
+}
+
+@screen md {
+  .map-options {
+    @apply flex-row;
+  }
+}

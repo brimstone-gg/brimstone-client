@@ -6,14 +6,16 @@
       "path": "/weapons/classic",
       "cost": 0,
       "magazine": 12,
+      "tier": "C",
+      "penetration": "Low",
       "fire": {
         "primary": {
           "mode": "Semi-Automatic",
-          "rate": "6.75 rounds/sec"
+          "rate": "6.75"
         },
         "alt": {
           "mode": "3-Round Burst, spread increase",
-          "rate": "2.22 rounds/sec"
+          "rate": "2.22"
         }
       },
       "images": {
@@ -27,10 +29,12 @@
       "path": "/weapons/shorty",
       "cost": 200,
       "magazine": 2,
+      "tier": "C",
+      "penetration": "Low",
       "fire": {
         "primary": {
-          "gun_type": "Semi-Automatic",
-          "fire_rate": "3.3 rounds/sec"
+          "mode": "Semi-Automatic",
+          "rate": "3.3"
         }
       },
       "images": {
@@ -44,10 +48,12 @@
       "path": "/weapons/frenzy",
       "cost": 400,
       "magazine": 13,
+      "tier": "C",
+      "penetration": "Low",
       "fire": {
         "primary": {
           "gun_type": "Full-Automatic",
-          "fire_rate": "10 rounds/sec"
+          "fire_rate": "10"
         }
       },
       "images": {
@@ -61,10 +67,12 @@
       "path": "/weapons/ghost",
       "cost": 500,
       "magazine": 15,
+      "tier": "A",
+      "penetration": "Medium",
       "fire": {
         "primary": {
           "type": "Semi-Automatic",
-          "rate": "6.75 rounds/sec"
+          "rate": "6.75"
         }
       },
       "images": {
@@ -78,10 +86,12 @@
       "path": "/weapons/sheriff",
       "cost": 800,
       "magazine": 6,
+      "tier": "B",
+      "penetration": "High",
       "fire": {
         "primary": {
           "type": "Semi-Automatic",
-          "rate": "4 rounds/sec"
+          "rate": "4"
         }
       },
       "images": {
@@ -97,14 +107,16 @@
       "path": "/weapons/stinger",
       "cost": 1000,
       "magazine": 20,
+      "tier": "B",
+      "penetration": "Low",
       "fire": {
         "primary": {
           "mode": "Full-Automatic",
-          "rate": "18 rounds/sec"
+          "rate": "18"
         },
         "alt": {
           "mode": "Zoom mode (1.15x), 4-Round Burst, spread reduction",
-          "rate": "4 rounds/sec"
+          "rate": "4"
         }
       },
       "images": {
@@ -118,14 +130,16 @@
       "path": "/weapons/spectre",
       "cost": 1600,
       "magazine": 30,
+      "tier": "A",
+      "penetration": "Medium",
       "fire": {
         "primary": {
           "mode": "Full-Automatic",
-          "rate": "13.33 rounds/sec"
+          "rate": "13.33"
         },
         "alt": {
           "mode": "Zoom mode (1.15x), slight spread reduction",
-          "rate": "12 rounds/sec"
+          "rate": "12"
         }
       },
       "images": {
@@ -141,14 +155,16 @@
       "path": "/weapons/bucky",
       "cost": 900,
       "magazine": 5,
+      "tier": "B",
+      "penetration": "Low",
       "fire": {
         "primary": {
           "mode": "Semi-Automatic",
-          "rate": "1.1 rounds/sec"
+          "rate": "1.1"
         },
         "alt": {
           "mode": "Semi-Automatic Air Burst (Extended primary fire shot)",
-          "rate": "1.1 rounds/sec"
+          "rate": "1.1"
         }
       },
       "images": {
@@ -162,10 +178,12 @@
       "path": "/weapons/judge",
       "cost": 1500,
       "magazine": 7,
+      "tier": "B",
+      "penetration": "Medium",
       "fire": {
         "primary": {
           "mode": "Full-Automatic",
-          "rate": "3.5 rounds/sec"
+          "rate": "3.5"
         }
       },
       "images": {
@@ -181,14 +199,16 @@
       "path": "/weapons/bulldog",
       "cost": 2100,
       "magazine": 24,
+      "tier": "B",
+      "penetration": "Medium",
       "fire": {
         "primary": {
           "mode": "Full-Automatic",
-          "rate": "9.15 rounds/sec"
+          "rate": "9.15"
         },
         "alt": {
           "mode": "Zoom (1.25x), 3-Round Burst",
-          "rate": "3 rounds/sec"
+          "rate": "3"
         }
       },
       "images": {
@@ -202,14 +222,16 @@
       "path": "/weapons/guardian",
       "cost": 2700,
       "magazine": 12,
+      "tier": "A",
+      "penetration": "Medium",
       "fire": {
         "primary": {
           "mode": "Semi-Automatic",
-          "rate": "6.5 rounds/sec"
+          "rate": "6.5"
         },
         "alt": {
           "mode": "Zoom (1.5x), slight spread reduction",
-          "rate": "6.5 rounds/sec"
+          "rate": "6.5"
         }
       },
       "images": {
@@ -223,14 +245,16 @@
       "path": "/weapons/phantom",
       "cost": 2900,
       "magazine": 30,
+      "tier": "S",
+      "penetration": "Medium",
       "fire": {
         "primary": {
           "mode": "Full-Automatic",
-          "rate": "11 rounds/sec"
+          "rate": "11"
         },
         "alt": {
           "mode": "Zoom (1.25x). Slight spread reduction",
-          "rate": "9.9 rounds/sec"
+          "rate": "9.9"
         }
       },
       "images": {
@@ -244,14 +268,16 @@
       "path": "/weapons/vandal",
       "cost": 2900,
       "magazine": 25,
+      "tier": "S",
+      "penetration": "Medium",
       "fire": {
         "primary": {
           "mode": "Full-Automatic",
-          "rate": "9.25 rounds/sec"
+          "rate": "9.25"
         },
         "alt": {
           "mode": "Zoom mode (1.25x), slight spread reduction",
-          "rate": "8.32 rounds/sec"
+          "rate": "8.32"
         }
       },
       "images": {
@@ -267,14 +293,16 @@
       "path": "/weapons/marshal",
       "cost": 1100,
       "magazine": 5,
+      "tier": "B",
+      "penetration": "High",
       "fire": {
         "primary": {
           "mode": "Semi-Automatic",
-          "rate": "1.5 rounds/sec"
+          "rate": "1.5"
         },
         "alt": {
           "mode": "Dual-Zoom Mode (2.5x), significant spread reduction",
-          "rate": "1.2 rounds/sec"
+          "rate": "1.2"
         }
       },
       "images": {
@@ -288,14 +316,16 @@
       "path": "/weapons/operator",
       "cost": 4500,
       "magazine": 5,
+      "tier": "S",
+      "penetration": "High",
       "fire": {
         "primary": {
           "mode": "Semi-Automatic",
-          "rate": "0.75 rounds/sec"
+          "rate": "0.75"
         },
         "alt": {
           "mode": "Dual-Zoom Mode (2.5x, 5x), significant spread reduction",
-          "rate": "0.75 rounds/sec"
+          "rate": "0.75"
         }
       },
       "images": {
@@ -311,14 +341,16 @@
       "path": "/weapons/ares",
       "cost": 1600,
       "magazine": 50,
+      "tier": "B",
+      "penetration": "High",
       "fire": {
         "primary": {
           "mode": "Full-Automatic",
-          "rate": "10 -> 13 rounds/sec (increasing during fire)"
+          "rate": "10 / 13"
         },
         "alt": {
           "mode": "Zoom mode (1.25x), slight spread reduction",
-          "rate": "10 -> 13 rounds/sec (increasing during fire)"
+          "rate": "10 / 13"
         }
       },
       "images": {
@@ -332,14 +364,16 @@
       "path": "/weapons/odin",
       "cost": 3200,
       "magazine": 100,
+      "tier": "A",
+      "penetration": "High",
       "fire": {
         "primary": {
           "mode": "Full-Automatic",
-          "rate": "12 -> 15.6 rounds/sec (increasing during fire)"
+          "rate": "12 / 15.6"
         },
         "alt": {
           "mode": "Zoom mode (1.25x), slight spread reduction",
-          "rate": "15.6 rounds/sec"
+          "rate": "15.6"
         }
       },
       "images": {

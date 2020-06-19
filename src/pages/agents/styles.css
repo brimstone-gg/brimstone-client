@@ -8,7 +8,7 @@
   @apply text-3xl;
 }
 .agent-header__meta {
-  @apply mt-4 text-sm tracking-wider;
+  @apply mt-4 mx-2 text-sm tracking-wider;
 }
 .agent-header__meta-icon {
   @apply w-5 h-5 mr-1;

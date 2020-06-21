@@ -21,8 +21,15 @@
   @apply text-nav-text-active;
 }
 
+@screen xl {
+  .tabs-nav-wrapper.weapons {
+    @apply block;
+  }
+}
+
 @screen md {
-  .tabs-nav-wrapper {
+  .tabs-nav-wrapper.agents,
+  .tabs-nav-wrapper.maps {
     @apply block;
   }
 }

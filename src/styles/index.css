@@ -21,6 +21,7 @@
 @import '../components/Footer/styles.css';
 @import '../pages/agents/styles.css';
 @import '../pages/maps/styles.css';
+@import '../pages/weapons/styles.css';
 
 ::-webkit-scrollbar-track-piece {
   @apply bg-general-background border-none border-0;

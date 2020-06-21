@@ -1,0 +1,133 @@
+.weapon-page-wrapper {
+  @apply flex flex-col-reverse mt-4;
+}
+.weapon-info {
+  @apply block flex-row w-full;
+}
+.weapons-group {
+  @apply w-full flex flex-col bg-navbar-50 border border-card-border;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.weapons-group > h4 {
+  @apply text-ice-white;
+  margin-bottom: 15px;
+}
+.weapons-group:last-child {
+  margin-bottom: 20px;
+}
+.weapon-legend {
+  @apply flex flex-wrap flex-grow m-0 list-none;
+}
+.weapon-legend-item {
+  @apply relative flex items-center flex-grow w-full mb-3;
+  color: #999ba4;
+  transition: color .3s ease;
+}
+.weapon-legend-item img {
+  margin-right: 15px;
+}
+.weapon-legend-item span {
+  opacity: .8;
+}
+.weapons-weapon {
+  @apply relative flex-none bg-navbar-50 border border-card-border;
+  height: 800px;
+  border-radius: 10px;
+}
+.weapons-weapon * {
+  @apply absolute w-full top-0 h-full p-3 object-contain pointer-events-none;
+}
+
+.weapon-options {
+  @apply flex items-center flex-1 flex-col w-full;
+}
+.weapon-extra-options {
+  @apply flex flex-col items-center flex-1 flex-col w-full;
+}
+.weapon-options__button {
+  @apply bg-navbar py-2 px-4 rounded-md text-sm font-medium text-nav-text w-full text-center cursor-pointer;
+  transition: all .1s ease;
+}
+.weapon-options__button:not(:last-child) {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.weapon-options__button:last-child {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.weapon-options__button span {
+  opacity: .8;
+  font-family: 'Heebo-Regular', Arial, sans-serif;
+}
+.weapon-options__button:hover:not(.weapon-options__button-active) {
+  @apply text-nav-text-hover;
+  background: rgba(35, 49, 70, 0.35);
+}
+.weapon-options__button:focus {
+  @apply outline-none text-nav-text-active;
+}
+.weapon-options__button-active {
+  @apply text-nav-text-active bg-card-border;
+}
+
+.weapon-options__toggle {
+  @apply flex w-full items-center bg-navbar px-3 py-2 rounded-lg mt-2;
+}
+.weapon-options__toggle-label {
+  @apply text-sm text-nav-text flex flex-1 items-center w-full;
+  opacity: .8;
+  font-family: 'Heebo-Regular', Arial, sans-serif;
+}
+.weapon-options__toggle-switch {
+  @apply relative flex items-center rounded-full w-10 h-1125 transition duration-300 ease-linear;
+}
+.weapon-options__toggle-switch-input {
+  @apply appearance-none w-full h-full;
+}
+.weapon-options__toggle-switch-input:focus,
+.weapon-options__toggle-switch-input:active {
+  @apply outline-none;
+}
+.weapon-options__toggle-switch-label {
+  @apply absolute left-0 bg-navbar border-3 border-card-border mb-2 w-6 h-6 rounded-full transition transform duration-300 ease-linear cursor-pointer;
+}
+
+@screen xl {
+  .weapon-page-wrapper {
+    @apply mt-0;
+  }
+}
+
+@screen lg {
+  .weapon-info {
+    @apply flex flex-col;
+    width: 400px;
+  }
+  .weapons-group:first-child {
+    @apply mr-0;
+  }
+  .weapons-group:last-child {
+    @apply mb-0 ml-0;
+  }
+  .weapon-page-wrapper {
+    @apply flex flex-row w-full;
+  }
+  .weapons-weapon {
+    @apply relative flex-1 bg-navbar-50 border border-card-border;
+    border-radius: 10px;
+    height: 800px;
+    margin-right: 20px;
+  }
+}
+
+@screen md {
+  .weapon-info {
+    @apply flex;
+  }
+  .weapon-options {
+    @apply flex-row;
+  }
+}

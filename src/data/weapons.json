@@ -52,8 +52,8 @@
       "penetration": "Low",
       "fire": {
         "primary": {
-          "gun_type": "Full-Automatic",
-          "fire_rate": "10"
+          "mode": "Full-Automatic",
+          "rate": "10"
         }
       },
       "images": {
@@ -71,7 +71,7 @@
       "penetration": "Medium",
       "fire": {
         "primary": {
-          "type": "Semi-Automatic",
+          "mode": "Semi-Automatic",
           "rate": "6.75"
         }
       },
@@ -90,7 +90,7 @@
       "penetration": "High",
       "fire": {
         "primary": {
-          "type": "Semi-Automatic",
+          "mode": "Semi-Automatic",
           "rate": "4"
         }
       },
@@ -115,7 +115,7 @@
           "rate": "18"
         },
         "alt": {
-          "mode": "Zoom mode (1.15x), 4-Round Burst, spread reduction",
+          "mode": "Zoom (1.15x), 4-Round Burst",
           "rate": "4"
         }
       },
@@ -138,7 +138,7 @@
           "rate": "13.33"
         },
         "alt": {
-          "mode": "Zoom mode (1.15x), slight spread reduction",
+          "mode": "Zoom (1.15x), slight spread reduction",
           "rate": "12"
         }
       },
@@ -163,7 +163,7 @@
           "rate": "1.1"
         },
         "alt": {
-          "mode": "Semi-Automatic Air Burst (Extended primary fire shot)",
+          "mode": "Semi-Automatic Air Burst",
           "rate": "1.1"
         }
       },
@@ -253,7 +253,7 @@
           "rate": "11"
         },
         "alt": {
-          "mode": "Zoom (1.25x). Slight spread reduction",
+          "mode": "Zoom (1.25x), slight spread reduction",
           "rate": "9.9"
         }
       },
@@ -276,7 +276,7 @@
           "rate": "9.25"
         },
         "alt": {
-          "mode": "Zoom mode (1.25x), slight spread reduction",
+          "mode": "Zoom (1.25x), slight spread reduction",
           "rate": "8.32"
         }
       },
@@ -301,7 +301,7 @@
           "rate": "1.5"
         },
         "alt": {
-          "mode": "Dual-Zoom Mode (2.5x), significant spread reduction",
+          "mode": "Dual-Zoom (2.5x), significant spread reduction",
           "rate": "1.2"
         }
       },
@@ -324,7 +324,7 @@
           "rate": "0.75"
         },
         "alt": {
-          "mode": "Dual-Zoom Mode (2.5x, 5x), significant spread reduction",
+          "mode": "Dual-Zoom (2.5x, 5x), significant spread reduction",
           "rate": "0.75"
         }
       },
@@ -349,7 +349,7 @@
           "rate": "10 / 13"
         },
         "alt": {
-          "mode": "Zoom mode (1.25x), slight spread reduction",
+          "mode": "Zoom (1.25x), slight spread reduction",
           "rate": "10 / 13"
         }
       },
@@ -372,7 +372,7 @@
           "rate": "12 / 15.6"
         },
         "alt": {
-          "mode": "Zoom mode (1.25x), slight spread reduction",
+          "mode": "Zoom (1.25x), slight spread reduction",
           "rate": "15.6"
         }
       },

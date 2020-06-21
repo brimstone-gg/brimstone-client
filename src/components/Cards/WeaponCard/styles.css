@@ -71,7 +71,7 @@
 }
 .weapon__desc-list {
   @apply w-full grid items-center justify-between;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr;
 }
 .weapon__desc-list_main {
   padding-bottom: 15px;

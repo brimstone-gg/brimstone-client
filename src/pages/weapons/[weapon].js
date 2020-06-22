@@ -24,7 +24,7 @@ const WeaponPage = ({ weapon }) => {
               </picture>
               <h4 className='weapon-name'>{weapon.name}</h4>
               <dl className='weapon__desc-list weapon__desc-list_main'>
-                <dt className='weapon__desc-title'>Sidearm</dt>
+                <dt className='weapon__desc-title'>{weapon.type}</dt>
                 <dd className='weapon__desc-text'>
                   <img className='price_credits' src={CDN('/images/price_credits.svg')} alt='Weapon Cost' title='Weapon Cost' />
                   {weapon.cost}

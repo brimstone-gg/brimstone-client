@@ -97,7 +97,7 @@
   @apply absolute left-0 text-red-700;
   content: 'BETA';
   top: 75%;
-  font-size: 0.6rem;
+  font-size: 0.65rem;
 }
 
 @screen md {

@@ -16,7 +16,7 @@ const WeaponCard = ({ data }) => {
         </picture>
         <h4 className='weapon-name'>{data.name}</h4>
         <dl className='weapon__desc-list weapon__desc-list_main'>
-          <dt className='weapon__desc-title'>Sidearm</dt>
+          <dt className='weapon__desc-title'>{data.type}</dt>
           <dd className='weapon__desc-text'>
             <img className='price_credits' src={CDN('/images/price_credits.svg')} alt='Weapon Cost' title='Weapon Cost' />
             {data.cost}

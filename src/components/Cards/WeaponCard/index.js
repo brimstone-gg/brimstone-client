@@ -3,7 +3,7 @@ import { CDN } from '@/utils/helpers'
 
 const WeaponCard = ({ data }) => {
   return (
-    <Link href={data.path}>
+    <Link href='/weapons/[weapon]' as={data.path}>
       <a className='weapon-block' title={`VALORANT Weapon ${data.name}`}>
         <span className={`weapon__tier weapon__tier-${data.tier}`}>{data.tier} tier</span>
         <picture>

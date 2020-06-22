@@ -3,7 +3,7 @@ import { CDN } from '@/utils/helpers'
 
 const AgentCard = ({ data }) => {
   return (
-    <Link href={data.path}>
+    <Link href='/agents/[agent]' as={data.path}>
       <a className='agent-block' title={`VALORANT Agent ${data.name}`}>
         <div className='agent-bg'></div>
         <img src={CDN(data.images.profile)} className='agent-hero' alt={`VALORANT Agent ${data.name}`} />

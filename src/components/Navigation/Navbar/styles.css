@@ -87,6 +87,18 @@
 .nav-link-active {
   @apply text-nav-text-active;
 }
+.site-name {
+  @apply text-lg tracking-widest text-main-text uppercase rounded-lg;
+}
+.site-name:focus {
+  @apply outline-none;
+}
+.site-name:after {
+  @apply absolute left-0 text-red-700;
+  content: 'BETA';
+  top: 75%;
+  font-size: 0.6rem;
+}
 
 @screen md {
   .nav-links-wrapper {

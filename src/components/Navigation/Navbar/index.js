@@ -31,9 +31,11 @@ const Navbar = () => {
       <div className='navbar-wrapper'>
         <div className='navbar'>
           <div className='flex-between-center py-4 flex-row'>
-            <Link href='/'>
-              <a className='text-lg tracking-widest text-main-text uppercase rounded-lg focus:outline-none'>Brimstone.GG</a>
-            </Link>
+            <div className='relative'>
+              <Link href='/'>
+                <a className='site-name'>Brimstone.GG</a>
+              </Link>
+            </div>
             <button
               className='md:hidden rounded-lg focus:outline-none focus:shadow-outline'
               aria-label='open and close mobile menu button'

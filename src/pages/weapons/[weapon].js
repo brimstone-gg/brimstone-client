@@ -8,7 +8,7 @@ const WeaponPage = ({ weapon }) => {
     <Layout>
       <WeaponTabs />
       <div className='weapon-page-wrapper'>
-        <div className='weapons-weapon'>{/* <img src={CDN(map.images.map.layout)} alt={`VALORANT Map ${weapon.name}`} /> */}</div>
+        <div className='weapons-weapon'></div>
         <div className='weapon-info'>
           <div className='weapons-group'>
             <h4 className='text-center text-lg'>Weapon Overview</h4>

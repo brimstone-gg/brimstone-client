@@ -14,6 +14,9 @@
   @apply text-ice-white;
   margin-bottom: 15px;
 }
+.weapons-group:hover .weapon-hero {
+  transform: scale(1.08);
+}
 .weapons-group:last-child {
   margin-bottom: 20px;
 }
@@ -95,16 +98,10 @@
   @apply absolute left-0 bg-navbar border-3 border-card-border mb-2 w-6 h-6 rounded-full transition transform duration-300 ease-linear cursor-pointer;
 }
 
-@screen xl {
-  .weapon-page-wrapper {
-    @apply mt-0;
-  }
-}
-
 @screen lg {
   .weapon-info {
     @apply flex flex-col;
-    width: 400px;
+    width: 350px;
   }
   .weapons-group:first-child {
     @apply mr-0;
@@ -113,21 +110,13 @@
     @apply mb-0 ml-0;
   }
   .weapon-page-wrapper {
-    @apply flex flex-row w-full;
+    @apply relative flex-1 flex-row mx-auto;
+    width: 1016px;
   }
   .weapons-weapon {
     @apply relative flex-1 bg-navbar-50 border border-card-border;
     border-radius: 10px;
     height: 800px;
     margin-right: 20px;
-  }
-}
-
-@screen md {
-  .weapon-info {
-    @apply flex;
-  }
-  .weapon-options {
-    @apply flex-row;
   }
 }

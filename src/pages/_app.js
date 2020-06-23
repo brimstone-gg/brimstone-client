@@ -11,6 +11,14 @@ const MyApp = ({ Component, pageProps }) => {
         <title>Brimstone.GG - VALORANT Statistics, Agents, Maps, Weapons and More!</title>
         <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width' />
         <meta name='description' content='VALORANT Statistics, Agents, Maps, Weapons and More!' />
+        <script async src='https://www.googletagmanager.com/gtag/js?id=UA-45871868-6'></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-45871868-6');
+        `
+          }}
+        ></script>
       </Head>
       <>
         <NextNprogress

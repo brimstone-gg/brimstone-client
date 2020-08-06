@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout'
-import Profile from '@/components/Profile'
+// import Profile from '@/components/Profile'
 
 import { API_URL } from '@/utils/API'
 
@@ -9,7 +9,8 @@ const UserProfile = props => {
   return (
     <Layout>
       <div className='profile-page'>
-        <Profile user={profile} />
+        <pre className='bg-gray-800 p-4 mt-4'>{JSON.stringify(profile, null, 2)}</pre>
+        {/* <Profile user={profile} /> */}
       </div>
     </Layout>
   )
@@ -17,12 +18,12 @@ const UserProfile = props => {
 
 export async function getServerSideProps({ query }) {
   const { username, discriminator } = query
-  const res = await fetch(`${API_URL}/profile/getUser/${username.toLowerCase()}/${discriminator}`)
+  const res = await fetch(`${API_URL}/accounts/by-riot-id/americas/${username.toLowerCase()}/${discriminator.toLowerCase()}`)
   const json = await res.json()
 
   return {
     props: {
-      profile: json.profile
+      profile: json.data
     }
   }
 }

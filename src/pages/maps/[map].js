@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import Layout from '@/components/Layout'
 import { MapTabs } from '@/components/Navigation/Tabs'
 import { getMap, getMapPaths } from '@/utils/API'
@@ -22,7 +23,7 @@ const MapPage = ({ map }) => {
   return (
     <Layout background={`/images/maps/list/${map.name.toLowerCase()}.jpg`}>
       <MapTabs />
-      <div className='map-page-wrapper'>
+      <motion.div className='map-page-wrapper' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <div className='map-info'>
           <div className='maps-group'>
             <h4 className='text-center'>Map Legend</h4>
@@ -100,7 +101,7 @@ const MapPage = ({ map }) => {
           {walls && side === 'attacking' && <img src={CDN(map.images.map.walls.offense)} alt={map.name} />}
           {walls && side === 'defending' && <img src={CDN(map.images.map.walls.defense)} alt={map.name} />}
         </div>
-      </div>
+      </motion.div>
     </Layout>
   )
 }

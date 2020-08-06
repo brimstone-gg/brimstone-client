@@ -6,7 +6,7 @@ import { fadeInUp } from '@/utils/animation'
 const WeaponCard = ({ data }) => {
   return (
     <Link href='/weapons/[weapon]' as={data.path}>
-      <motion.a variants={fadeInUp} className='weapon-block' title={`VALORANT Weapon ${data.name}`}>
+      <motion.a className='weapon-block' title={`VALORANT Weapon ${data.name}`} variants={fadeInUp}>
         <span className={`weapon__tier weapon__tier-${data.tier}`}>{data.tier} tier</span>
         <picture>
           <img

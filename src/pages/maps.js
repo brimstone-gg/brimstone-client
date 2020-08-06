@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import Layout from '@/components/Layout'
 import MapCard from '@/components/Cards/MapCard'
-import { stagger } from '@/utils/animation'
 
 import { maps } from '../data/maps.json'
 
@@ -16,11 +15,11 @@ const Maps = () => {
                 Valorant Maps
               </motion.h1>
             </div>
-            <motion.div className='maps-grid' variants={stagger}>
+            <div className='maps-grid'>
               {maps.map((el, i) => (
                 <MapCard data={el} key={i} />
               ))}
-            </motion.div>
+            </div>
           </div>
         </div>
       </motion.div>

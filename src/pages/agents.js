@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import Layout from '@/components/Layout'
 import AgentCard from '@/components/Cards/AgentCard'
-import { stagger } from '@/utils/animation'
 
 import { agents } from '../data/agents.json'
 
@@ -16,11 +15,11 @@ const Agents = () => {
                 Valorant Agents
               </motion.h1>
             </div>
-            <motion.div className='agents-grid' variants={stagger}>
+            <div className='agents-grid'>
               {agents.map((el, i) => (
                 <AgentCard data={el} key={i} />
               ))}
-            </motion.div>
+            </div>
           </div>
         </div>
       </motion.div>

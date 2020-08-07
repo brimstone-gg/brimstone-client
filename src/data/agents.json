@@ -527,6 +527,54 @@
           "image": "/images/agents/abilities/viper/vipers_pit.png"
         }
       ]
+    },
+    {
+      "name": "Killjoy",
+      "key": "killjoy",
+      "class": "Sentinel",
+      "path": "/agents/killjoy",
+      "images": {
+        "profile": "/images/agents/profile/killjoy.png",
+        "search": "/images/agents/headshot/killjoy.png"
+      },
+      "abilities": [
+        {
+          "name": "Nanoswarm",
+          "cost": 200,
+          "keybind": "C",
+          "type": "Basic",
+          "description": "Equip a Nanoswarm grenade. Fire to throw the grenade. Upon landing, the Nanoswarm goes covert. Activate the Nanoswarm to deploy a damaging swarm of nanobots.",
+          "uses": 2,
+          "image": "/images/agents/abilities/killjoy/nanoswarm.png"
+        },
+        {
+          "name": "Alarmbot",
+          "cost": 200,
+          "keybind": "Q",
+          "type": "Basic",
+          "description": "Equip a covert Alarmbot. Fire to deploy a bot that hunts down enemies that get in range. After reaching its target, the bot explodes, applying Vulernable. Hold equip to recall a deployed bot.",
+          "uses": 1,
+          "image": "/images/agents/abilities/killjoy/alarmbot.png"
+        },
+        {
+          "name": "Turret",
+          "cost": "Free",
+          "keybind": "E",
+          "type": "Signature",
+          "description": "Equip a Turret. Fire to deploy a turret that fires at enemies in a 180 degree cone. Hold equip to recall the deployed turret.",
+          "uses": 1,
+          "image": "/images/agents/abilities/killjoy/turret.png"
+        },
+        {
+          "name": "Lockdown",
+          "cost": "7 Ult Points",
+          "keybind": "X",
+          "type": "Ultimate",
+          "description": "Equip the Lockdown device. Fire to deploy the device. After a long windup, the device Detains all enemies caught in the radius. The device can be destroyed by enemies.",
+          "uses": 1,
+          "image": "/images/agents/abilities/killjoy/lockdown.png"
+        }
+      ]
     }
   ]
 }

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Layout from '@/components/Layout'
 import WeaponCard from '@/components/Cards/WeaponCard'
 
@@ -8,11 +9,13 @@ const allWeapons = [ ...sidearms, ...smgs, ...shotguns, ...rifles, ...snipers, .
 const Weapons = () => {
   return (
     <Layout>
-      <div className='weapons-page-wrapper'>
+      <motion.div className='weapons-page-wrapper' initial='initial' animate='animate'>
         <div className='weapons-page'>
           <div>
             <div className='weapons-title'>
-              <h1 className='text-2xl'>Valorant Weapons</h1>
+              <motion.h1 className='text-2xl' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                Valorant Weapons
+              </motion.h1>
             </div>
             <div className='weapons-grid'>
               {allWeapons.map((el, i) => (
@@ -21,7 +24,7 @@ const Weapons = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Layout>
   )
 }

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Layout from '@/components/Layout'
 import AgentCard from '@/components/Cards/AgentCard'
 
@@ -6,11 +7,13 @@ import { agents } from '../data/agents.json'
 const Agents = () => {
   return (
     <Layout>
-      <div className='agents-page-wrapper'>
+      <motion.div className='agents-page-wrapper' initial='initial' animate='animate'>
         <div className='agents-page'>
           <div>
             <div className='agents-title'>
-              <h1 className='text-2xl'>Valorant Agents</h1>
+              <motion.h1 className='text-2xl' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                Valorant Agents
+              </motion.h1>
             </div>
             <div className='agents-grid'>
               {agents.map((el, i) => (
@@ -19,7 +22,7 @@ const Agents = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Layout>
   )
 }

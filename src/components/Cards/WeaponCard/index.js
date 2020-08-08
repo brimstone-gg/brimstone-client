@@ -1,10 +1,12 @@
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { CDN } from '@/utils/helpers'
+import { fadeInUp } from '@/utils/animation'
 
 const WeaponCard = ({ data }) => {
   return (
     <Link href='/weapons/[weapon]' as={data.path}>
-      <a className='weapon-block' title={`VALORANT Weapon ${data.name}`}>
+      <motion.a className='weapon-block' title={`VALORANT Weapon ${data.name}`} variants={fadeInUp}>
         <span className={`weapon__tier weapon__tier-${data.tier}`}>{data.tier} tier</span>
         <picture>
           <img
@@ -32,7 +34,7 @@ const WeaponCard = ({ data }) => {
           <dt className='weapon__desc-title'>Fire Rate</dt>
           <dd className='weapon__desc-text'>{data.fire.primary.rate}</dd>
         </dl>
-      </a>
+      </motion.a>
     </Link>
   )
 }

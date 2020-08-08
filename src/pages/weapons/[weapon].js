@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Layout from '@/components/Layout'
 import { WeaponTabs } from '@/components/Navigation/Tabs'
 import { getWeapon, getWeaponPaths } from '@/utils/API'
@@ -7,7 +8,7 @@ const WeaponPage = ({ weapon }) => {
   return (
     <Layout>
       <WeaponTabs />
-      <div className='weapon-page-wrapper'>
+      <motion.div className='weapon-page-wrapper' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <div className='weapons-weapon'></div>
         <div className='weapon-info'>
           <div className='weapons-group'>
@@ -55,7 +56,7 @@ const WeaponPage = ({ weapon }) => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Layout>
   )
 }

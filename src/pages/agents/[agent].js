@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Layout from '@/components/Layout'
 import { AgentTabs } from '@/components/Navigation/Tabs'
 import { getAgent, getAgentPaths } from '@/utils/API'
@@ -36,7 +37,7 @@ const AgentPage = ({ agent }) => {
   return (
     <Layout background={`/images/agents/background/${agent.key}.jpg`}>
       <AgentTabs />
-      <div className='agents-page-wrapper'>
+      <motion.div className='agents-page-wrapper' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <div className='agent-header'>
           <div className='agent-header-text'>
             <div className='flex flex-row flex-1 items-center'>
@@ -64,7 +65,7 @@ const AgentPage = ({ agent }) => {
             <AgentAbility ability={el} key={i} />
           ))}
         </div>
-      </div>
+      </motion.div>
     </Layout>
   )
 }

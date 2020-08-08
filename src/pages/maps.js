@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Layout from '@/components/Layout'
 import MapCard from '@/components/Cards/MapCard'
 
@@ -6,11 +7,13 @@ import { maps } from '../data/maps.json'
 const Maps = () => {
   return (
     <Layout>
-      <div className='maps-page-wrapper'>
+      <motion.div className='maps-page-wrapper' initial='initial' animate='animate'>
         <div className='maps-page'>
           <div>
             <div className='maps-title'>
-              <h1 className='text-2xl'>Valorant Maps</h1>
+              <motion.h1 className='text-2xl' initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+                Valorant Maps
+              </motion.h1>
             </div>
             <div className='maps-grid'>
               {maps.map((el, i) => (
@@ -19,7 +22,7 @@ const Maps = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Layout>
   )
 }

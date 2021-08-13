@@ -19,7 +19,7 @@
   "homepage": "https://github.com/brimstone-gg/brimstone-client#readme",
   "dependencies": {
     "framer-motion": "^2.3.0",
-    "next": "^9.5.1",
+    "next": "^11.1.0",
     "nextjs-progressbar": "0.0.5",
     "react": "^16.13.1",
     "react-autosuggest": "^10.0.2",
